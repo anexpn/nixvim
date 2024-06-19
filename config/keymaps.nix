@@ -46,10 +46,16 @@
     }
 
     {
-      mode = ["n" "v"];
-      key = "<leader>d";
-      action = "+debug";
+      mode = "n";
+      key = "<leader>b";
+      action = "+buffer";
     }
+
+    # {
+    #   mode = ["n" "v"];
+    #   key = "<leader>d";
+    #   action = "+debug";
+    # }
 
     {
       mode = ["n" "v"];
@@ -57,11 +63,11 @@
       action = "+code";
     }
 
-    {
-      mode = ["n" "v"];
-      key = "<leader>t";
-      action = "+test";
-    }
+    # {
+    #   mode = ["n" "v"];
+    #   key = "<leader>t";
+    #   action = "+test";
+    # }
 
     # Tabs
     {
@@ -81,6 +87,34 @@
       options = {
         silent = true;
         desc = "Close tab";
+      };
+    }
+
+    # Buffers
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<cmd>bdelete<cr>";
+      options = {
+        desc = "Delete buffer";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>bb";
+      action = "<cmd>e #<cr>";
+      options = {
+        desc = "Switch to Other Buffer";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>`";
+      action = "<cmd>e #<cr>";
+      options = {
+        desc = "Switch to Other Buffer";
       };
     }
 
@@ -186,6 +220,7 @@
       };
     }
 
+    # UI
     {
       mode = "n";
       key = "<leader>ul";
@@ -216,6 +251,7 @@
       };
     }
 
+    # No group
     {
       mode = "v";
       key = "J";
@@ -271,135 +307,55 @@
       options = {desc = "Allow search terms to stay in the middle ";};
     }
 
-    # Paste stuff without saving the deleted word into the buffer
-    {
-      mode = "x";
-      key = "<leader>p";
-      action = ''"_dP'';
-      options = {desc = "Deletes to void register and paste over";};
-    }
-
-    # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
-    {
-      mode = ["n" "v"];
-      key = "<leader>y";
-      action = ''"+y'';
-      options = {desc = "Copy to system clipboard";};
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>Y";
-      action = ''"+Y'';
-      options = {desc = "Copy to system clipboard";};
-    }
-
-    # Delete to void register
-    {
-      mode = ["n" "v"];
-      key = "<leader>D";
-      action = ''"_d'';
-      options = {desc = "Delete to void register";};
-    }
-
-    # <C-c> instead of pressing esc just because
-    {
-      mode = "i";
-      key = "<C-c>";
-      action = "<Esc>";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>zz";
-      action = "<CMD> ZenMode | Pencil<CR>";
-      options = {desc = "Toggle writting mode";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>m";
-      action = "<CMD> Grapple toggle <CR>";
-      options = {desc = "Grapple Toggle tag";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>k";
-      action = "<CMD> Grapple toggle_tags <CR>";
-      options = {desc = "Grapple Toggle tag";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>K";
-      action = "<CMD> Grapple toggle_scopes <CR>";
-      options = {desc = "Grapple Toggle scopes";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>j";
-      action = "<CMD> Grapple cycle forward <CR>";
-      options = {desc = "Grapple Cycle forward";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>J";
-      action = "<CMD> Grapple cycle backward <CR>";
-      options = {desc = "Grapple Cycle backward";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>1";
-      action = "<CMD> Grapple select index=1<CR>";
-      options = {desc = "Grapple Select 1";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>2";
-      action = "<CMD> Grapple select index=2<CR>";
-      options = {desc = "Grapple Select 2";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>3";
-      action = "<CMD> Grapple select index=3<CR>";
-      options = {desc = "Grapple Select 3";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>4";
-      action = "<CMD> Grapple select index=4<CR>";
-      options = {desc = "Grapple Select 4";};
-    }
+    # {
+    #   mode = "x";
+    #   key = "<leader>p";
+    #   action = ''"_dP'';
+    #   options = {desc = "Deletes to void register and paste over";};
+    # }
+    #
+    # {
+    #   mode = ["n" "v"];
+    #   key = "<leader>y";
+    #   action = ''"+y'';
+    #   options = {desc = "Copy to system clipboard";};
+    # }
+    #
+    # {
+    #   mode = ["n" "v"];
+    #   key = "<leader>Y";
+    #   action = ''"+Y'';
+    #   options = {desc = "Copy to system clipboard";};
+    # }
+    #
+    # {
+    #   mode = ["n" "v"];
+    #   key = "<leader>D";
+    #   action = ''"_d'';
+    #   options = {desc = "Delete to void register";};
+    # }
   ];
   extraConfigLua = ''
     function ToggleLineNumber()
-    if vim.wo.number then
-      vim.wo.number = false
-    else
-      vim.wo.number = true
+      if vim.wo.number then
+        vim.wo.number = false
+      else
+        vim.wo.number = true
         vim.wo.relativenumber = false
-        end
-        end
+      end
+    end
 
-        function ToggleRelativeLineNumber()
-        if vim.wo.relativenumber then
-          vim.wo.relativenumber = false
-        else
-          vim.wo.relativenumber = true
-            vim.wo.number = false
-            end
-            end
+    function ToggleRelativeLineNumber()
+      if vim.wo.relativenumber then
+        vim.wo.relativenumber = false
+      else
+        vim.wo.relativenumber = true
+        vim.wo.number = false
+      end
+    end
 
-            function ToggleWrap()
-            vim.wo.wrap = not vim.wo.wrap
-            end
+    function ToggleWrap()
+      vim.wo.wrap = not vim.wo.wrap
+    end
   '';
 }

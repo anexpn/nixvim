@@ -38,19 +38,13 @@
           desc = "Command History";
         };
       };
-      "<leader>b" = {
-        action = "buffers";
-        options = {
-          desc = "+buffer";
-        };
-      };
       "<leader>ff" = {
         action = "find_files";
         options = {
           desc = "Find project files";
         };
       };
-      "<leader>fr" = {
+      "<leader>fg" = {
         action = "live_grep";
         options = {
           desc = "Find text";
@@ -62,13 +56,19 @@
           desc = "Resume";
         };
       };
-      "<leader>fg" = {
+      "<leader>fr" = {
         action = "oldfiles";
         options = {
           desc = "Recent";
         };
       };
       "<leader>fb" = {
+        action = "buffers";
+        options = {
+          desc = "Buffers";
+        };
+      };
+      "<leader>," = {
         action = "buffers";
         options = {
           desc = "Buffers";
@@ -101,7 +101,7 @@
       "<leader>sb" = {
         action = "current_buffer_fuzzy_find";
         options = {
-          desc = "Buffer";
+          desc = "Current Buffer";
         };
       };
       "<leader>sc" = {
@@ -119,19 +119,19 @@
       "<leader>sD" = {
         action = "diagnostics";
         options = {
-          desc = "Workspace diagnostics";
+          desc = "Workspace Diagnostics";
         };
       };
       "<leader>sh" = {
         action = "help_tags";
         options = {
-          desc = "Help pages";
+          desc = "Help Pages";
         };
       };
       "<leader>sH" = {
         action = "highlights";
         options = {
-          desc = "Search Highlight Groups";
+          desc = "Highlight Groups";
         };
       };
       "<leader>sk" = {
@@ -143,13 +143,13 @@
       "<leader>sM" = {
         action = "man_pages";
         options = {
-          desc = "Man pages";
+          desc = "Man Pages";
         };
       };
       "<leader>sm" = {
         action = "marks";
         options = {
-          desc = "Jump to Mark";
+          desc = "Marks";
         };
       };
       "<leader>so" = {
@@ -167,7 +167,7 @@
       "<leader>uC" = {
         action = "colorscheme";
         options = {
-          desc = "Colorscheme preview";
+          desc = "Colorscheme Preview";
         };
       };
     };
@@ -178,7 +178,7 @@
       key = "<leader>sd";
       action = "<cmd>Telescope diagnostics bufnr=0<cr>";
       options = {
-        desc = "Document diagnostics";
+        desc = "Document Diagnostics";
       };
     }
     {
@@ -186,7 +186,7 @@
       key = "<leader>fe";
       action = "<cmd>Telescope file_browser<cr>";
       options = {
-        desc = "File browser";
+        desc = "File Browser Workspace";
       };
     }
     {
@@ -194,7 +194,7 @@
       key = "<leader>fE";
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
       options = {
-        desc = "File browser";
+        desc = "File Browser Current";
       };
     }
   ];

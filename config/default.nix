@@ -7,16 +7,10 @@
     ./keymaps.nix
     ./options.nix
     ./highlight.nix
-
-    ./plugins/colorscheme/biscuit.nix
-    ./plugins/colorscheme/colorscheme.nix
+    ./colorschemes.nix
 
     ./plugins/completion/cmp.nix
-    ./plugins/completion/copilot-cmp.nix
-    ./plugins/completion/lspkind.nix
-    ./plugins/completion/schemastore.nix
 
-    ./plugins/git/gitlinker.nix
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
     ./plugins/git/worktree.nix
@@ -37,25 +31,23 @@
     ./plugins/treesitter/treesitter.nix
 
     ./plugins/ui/btw.nix
-    ./plugins/ui/bufferline.nix
+    # ./plugins/ui/bufferline.nix
     ./plugins/ui/indent-blankline.nix
     ./plugins/ui/noice.nix
     ./plugins/ui/nvim-notify.nix
     ./plugins/ui/telescope.nix
 
     ./plugins/utils/comment.nix
-    ./plugins/utils/copilot.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/grapple.nix
-    ./plugins/utils/hardtime.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/mini.nix
     ./plugins/utils/nvim-autopairs.nix
-    # ./plugins/utils/obsidian.nix
     ./plugins/utils/oil.nix
     ./plugins/utils/ufo.nix
     ./plugins/utils/undotree.nix
     ./plugins/utils/whichkey.nix
+    ./plugins/utils/toggleterm.nix
   ];
   options = {
     theme = lib.mkOption {

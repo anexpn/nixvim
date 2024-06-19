@@ -67,7 +67,7 @@
     {
       mode = "n";
       key = "gd";
-      action = "<cmd>Lspsaga finder def<CR>";
+      action = "<cmd>Lspsaga goto_definition<CR>";
       options = {
         desc = "Goto Definition";
         silent = true;
@@ -82,16 +82,6 @@
         silent = true;
       };
     }
-
-    # {
-    #   mode = "n";
-    #   key = "gD";
-    #   action = "<cmd>Lspsaga show_line_diagnostics<CR>";
-    #   options = {
-    #     desc = "Goto Declaration";
-    #     silent = true;
-    #   };
-    # }
 
     {
       mode = "n";

@@ -8,7 +8,8 @@ in {
   plugins = {
     bufferline = {
       enable = true;
-      separatorStyle = "thick"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
+      separatorStyle = "thin"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
+      showCloseIcon = false;
       highlights = lib.mkIf config.colorschemes.base16.enable {
         fill = {
           fg = colors.base00;
@@ -107,33 +108,6 @@ in {
         desc = "Cycle to previous buffer";
       };
     }
-
-    {
-      mode = "n";
-      key = "<leader>bd";
-      action = "<cmd>bdelete<cr>";
-      options = {
-        desc = "Delete buffer";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>bb";
-      action = "<cmd>e #<cr>";
-      options = {
-        desc = "Switch to Other Buffer";
-      };
-    }
-
-    # {
-    #   mode = "n";
-    #   key = "<leader>`";
-    #   action = "<cmd>e #<cr>";
-    #   options = {
-    #     desc = "Switch to Other Buffer";
-    #   };
-    # }
 
     {
       mode = "n";
