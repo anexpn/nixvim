@@ -84,6 +84,8 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
+
+      guifont = "Rec Mono Casual,Fira Code Nerd Font:h18";
     };
   };
 }
