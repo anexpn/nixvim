@@ -55,13 +55,5 @@
         desc = "Go to Upper Window";
       };
     }
-    {
-      mode = "t";
-      key = "<C-w>";
-      action = "<C-\\><C-n><C-w>";
-      options = {
-        desc = "Go to Other Window";
-      };
-    }
   ];
 }

@@ -69,7 +69,7 @@
       key = "gd";
       action = "<cmd>Lspsaga goto_definition<CR>";
       options = {
-        desc = "Goto Definition";
+        desc = "Goto Definition (Lspsaga)";
         silent = true;
       };
     }
@@ -78,7 +78,7 @@
       key = "gr";
       action = "<cmd>Lspsaga finder ref<CR>";
       options = {
-        desc = "Goto References";
+        desc = "Goto References (Lspsaga)";
         silent = true;
       };
     }
@@ -88,7 +88,7 @@
       key = "gI";
       action = "<cmd>Lspsaga finder imp<CR>";
       options = {
-        desc = "Goto Implementation";
+        desc = "Goto Implementation (Lspsaga)";
         silent = true;
       };
     }
@@ -98,7 +98,7 @@
       key = "gT";
       action = "<cmd>Lspsaga peek_type_definition<CR>";
       options = {
-        desc = "Type Definition";
+        desc = "Type Definition (Lspsaga)";
         silent = true;
       };
     }
@@ -108,7 +108,7 @@
       key = "K";
       action = "<cmd>Lspsaga hover_doc<CR>";
       options = {
-        desc = "Hover";
+        desc = "Hover (Lspsaga)";
         silent = true;
       };
     }
@@ -118,7 +118,7 @@
       key = "<leader>cw";
       action = "<cmd>Lspsaga outline<CR>";
       options = {
-        desc = "Outline";
+        desc = "Outline (Lspsaga)";
         silent = true;
       };
     }
@@ -128,7 +128,7 @@
       key = "<leader>cr";
       action = "<cmd>Lspsaga rename<CR>";
       options = {
-        desc = "Rename";
+        desc = "Rename (Lspsaga)";
         silent = true;
       };
     }
@@ -138,7 +138,7 @@
       key = "<leader>ca";
       action = "<cmd>Lspsaga code_action<CR>";
       options = {
-        desc = "Code Action";
+        desc = "Code Action (Lspsaga)";
         silent = true;
       };
     }
@@ -148,7 +148,7 @@
       key = "<leader>cd";
       action = "<cmd>Lspsaga show_line_diagnostics<CR>";
       options = {
-        desc = "Line Diagnostics";
+        desc = "Line Diagnostics (Lspsaga)";
         silent = true;
       };
     }
@@ -158,7 +158,7 @@
       key = "]d";
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options = {
-        desc = "Next Diagnostic";
+        desc = "Next Diagnostic (Lspsaga)";
         silent = true;
       };
     }
@@ -168,7 +168,7 @@
       key = "[d";
       action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
       options = {
-        desc = "Previous Diagnostic";
+        desc = "Previous Diagnostic (Lspsaga)";
         silent = true;
       };
     }

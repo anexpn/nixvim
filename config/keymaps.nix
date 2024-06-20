@@ -351,19 +351,25 @@
     {
       mode = "v";
       key = "<A-j>";
-      action = ":m '>+1<CR>gv=gv";
-      options = {desc = "Move Down";};
+      action = ":m '>+1<cr>gv=gv";
+      options = {
+        silent = true;
+        desc = "Move Down";
+      };
     }
     {
       mode = "v";
       key = "<A-k>";
-      action = ":m '<-2<CR>gv=gv";
-      options = {desc = "Move Up";};
+      action = ":m '<-2<cr>gv=gv";
+      options = {
+        silent = true;
+        desc = "Move Up";
+      };
     }
     {
       mode = "n";
       key = "J";
-      action = "mzJ`z";
+      action = "myJ`y"; # Side effect: overwrite the y mark
       options = {
         desc = "Allow cursor to stay in the same place after appending to current line ";
       };
@@ -372,12 +378,6 @@
 
     # General
     # https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n
-    # map("n", "n", "'Nn'[v:searchforward].'zv'", { expr = true, desc = "Next Search Result" })
-    # map("x", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })
-    # map("o", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })
-    # map("n", "N", "'nN'[v:searchforward].'zv'", { expr = true, desc = "Prev Search Result" })
-    # map("x", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Search Result" })
-    # map("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Search Result" })
     {
       mode = "n";
       key = "n";
@@ -433,8 +433,6 @@
       };
     }
     # better indenting
-    # map("v", "<", "<gv")
-    # map("v", ">", ">gv")
     {
       mode = "v";
       key = "<";
@@ -447,11 +445,6 @@
     }
 
     # Quickfix
-    # map("n", "<leader>xl", "<cmd>lopen<cr>", { desc = "Location List" })
-    # map("n", "<leader>xq", "<cmd>copen<cr>", { desc = "Quickfix List" })
-    #
-    # map("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
-    # map("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
     {
       mode = "n";
       key = "<leader>xl";
@@ -480,6 +473,71 @@
       options = {
         silent = true;
         desc = "Next Quickfix";
+      };
+    }
+
+    # Diagnostics
+    {
+      mode = "n";
+      key = "<leader>cd";
+      action = ":lua vim.diagnostic.open_float()<cr>";
+      options = {
+        silent = true;
+        desc = "Line Diagnostics";
+      };
+    }
+    {
+      mode = "n";
+      key = "]d";
+      action = ":lua vim.diagnostic.goto_next()<cr>";
+      options = {
+        silent = true;
+        desc = "Next Diagnostic";
+      };
+    }
+    {
+      mode = "n";
+      key = "[d";
+      action = ":lua vim.diagnostic.goto_prev()<cr>";
+      options = {
+        silent = true;
+        desc = "Previous Diagnostic";
+      };
+    }
+    {
+      mode = "n";
+      key = "]e";
+      action = ":lua vim.diagnostic.goto_next({severity=vim.diagnostic.severity.ERROR})<cr>";
+      options = {
+        silent = true;
+        desc = "Next Error";
+      };
+    }
+    {
+      mode = "n";
+      key = "[e";
+      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.ERROR})<cr>";
+      options = {
+        silent = true;
+        desc = "Previous Error";
+      };
+    }
+    {
+      mode = "n";
+      key = "]w";
+      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.WARN})<cr>";
+      options = {
+        silent = true;
+        desc = "Next Warning";
+      };
+    }
+    {
+      mode = "n";
+      key = "[w";
+      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.WARN})<cr>";
+      options = {
+        silent = true;
+        desc = "Previous Warning";
       };
     }
 
@@ -566,6 +624,12 @@
 
     function ToggleWrap()
       vim.wo.wrap = not vim.wo.wrap
+    end
+
+    function diagnostic_goto(next, severity)
+      local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+      severity = severity and vim.diagnostic.severity[severity] or nil
+      go({ severity = severity })
     end
   '';
 }
