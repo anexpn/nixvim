@@ -5,6 +5,9 @@
       file-browser = {
         enable = true;
       };
+      frecency = {
+        enable = true;
+      };
       fzf-native = {
         enable = true;
       };
@@ -23,7 +26,7 @@
       "<leader><space>" = {
         action = "find_files";
         options = {
-          desc = "Find project files";
+          desc = "Find Workspace Files";
         };
       };
       "<leader>/" = {
@@ -36,18 +39,6 @@
         action = "command_history";
         options = {
           desc = "Command History";
-        };
-      };
-      "<leader>ff" = {
-        action = "find_files";
-        options = {
-          desc = "Find project files";
-        };
-      };
-      "<leader>fg" = {
-        action = "live_grep";
-        options = {
-          desc = "Find text";
         };
       };
       "<leader>fR" = {
@@ -164,6 +155,18 @@
           desc = "Resume";
         };
       };
+      "<leader>ss" = {
+        action = "lsp_document_symbols";
+        options = {
+          desc = "Buffer Symbols";
+        };
+      };
+      "<leader>sS" = {
+        action = "lsp_workspace_symbols";
+        options = {
+          desc = "Workspace Symbols";
+        };
+      };
       "<leader>uC" = {
         action = "colorscheme";
         options = {
@@ -178,7 +181,7 @@
       key = "<leader>sd";
       action = "<cmd>Telescope diagnostics bufnr=0<cr>";
       options = {
-        desc = "Document Diagnostics";
+        desc = "Buffer Diagnostics";
       };
     }
     {
@@ -195,6 +198,22 @@
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
       options = {
         desc = "File Browser Current";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>Telescope frecency workspace=CWD prompt_title=Frecency(CWD)<cr>";
+      options = {
+        desc = "Files Frecency (CWD)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fF";
+      action = "<cmd>Telescope frecency prompt_title=Frecency<cr>";
+      options = {
+        desc = "Files Frecency";
       };
     }
   ];

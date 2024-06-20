@@ -42,7 +42,7 @@
       action = ":Gitsigns blame_line<CR>";
       options = {
         silent = true;
-        desc = "Blame line";
+        desc = "Blame Line";
       };
     }
     {

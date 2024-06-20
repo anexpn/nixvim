@@ -4,7 +4,6 @@
   ...
 }: {
   imports = [
-    ./keymaps.nix
     ./options.nix
     ./highlight.nix
     ./colorschemes.nix
@@ -49,6 +48,9 @@
     ./plugins/utils/undotree.nix
     ./plugins/utils/whichkey.nix
     ./plugins/utils/toggleterm.nix
+
+    # Overrided by the above
+    ./keymaps.nix
   ];
   options = {
     theme = lib.mkOption {

@@ -86,6 +86,9 @@
       showmode = false;
 
       guifont = "Rec Mono Casual,Fira Code Nerd Font:h18";
+
+      # Only work in nvim 0.10
+      smoothscroll = true;
     };
   };
 }
