@@ -31,7 +31,7 @@
     ./plugins/treesitter/treesitter.nix
 
     ./plugins/ui/btw.nix
-    # ./plugins/ui/bufferline.nix
+    ./plugins/ui/bufferline.nix
     ./plugins/ui/indent-blankline.nix
     ./plugins/ui/noice.nix
     ./plugins/ui/nvim-notify.nix

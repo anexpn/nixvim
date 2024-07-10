@@ -13,6 +13,7 @@
         gopls = {enable = true;};
         # yamlls = { enable = true; };
         hls = {enable = true;};
+        clangd = {enable = true;};
       };
       # Handle by lspsaga
       # keymaps = {
