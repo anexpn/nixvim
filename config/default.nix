@@ -49,6 +49,8 @@
     ./plugins/utils/whichkey.nix
     ./plugins/utils/toggleterm.nix
 
+    ./plugins/langs/haskell/telescope_hoogle.nix
+
     # Overrided by the above
     ./keymaps.nix
   ];
