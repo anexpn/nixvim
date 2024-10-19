@@ -15,13 +15,13 @@
     ./plugins/git/lazygit.nix
     ./plugins/git/worktree.nix
 
-    ./plugins/lsp/conform.nix
-    ./plugins/lsp/fidget.nix
-    ./plugins/lsp/hlchunk.nix
-    ./plugins/lsp/lsp.nix
-    ./plugins/lsp/lspsaga.nix
-    ./plugins/lsp/none-ls.nix
-    ./plugins/lsp/trouble.nix
+    # ./plugins/lsp/conform.nix
+    # ./plugins/lsp/fidget.nix
+    # ./plugins/lsp/hlchunk.nix
+    # ./plugins/lsp/lsp.nix
+    # ./plugins/lsp/lspsaga.nix
+    # ./plugins/lsp/none-ls.nix
+    # ./plugins/lsp/trouble.nix
 
     ./plugins/snippets/luasnip.nix
 
@@ -32,7 +32,7 @@
 
     ./plugins/ui/btw.nix
     ./plugins/ui/bufferline.nix
-    ./plugins/ui/indent-blankline.nix
+    # ./plugins/ui/indent-blankline.nix
     ./plugins/ui/noice.nix
     ./plugins/ui/nvim-notify.nix
     ./plugins/ui/telescope.nix
