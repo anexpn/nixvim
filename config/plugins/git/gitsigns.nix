@@ -2,7 +2,7 @@
   plugins.gitsigns = {
     enable = true;
     settings = {
-      trouble = true;
+      # trouble = true;
       current_line_blame = false;
       signs = {
         add = {

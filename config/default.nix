@@ -31,16 +31,16 @@
     ./plugins/treesitter/treesitter.nix
 
     ./plugins/ui/btw.nix
-    ./plugins/ui/bufferline.nix
+    # ./plugins/ui/bufferline.nix
     # ./plugins/ui/indent-blankline.nix
-    ./plugins/ui/noice.nix
-    ./plugins/ui/nvim-notify.nix
+    # ./plugins/ui/noice.nix
+    # ./plugins/ui/nvim-notify.nix
     ./plugins/ui/telescope.nix
 
     ./plugins/utils/comment.nix
     ./plugins/utils/flash.nix
     ./plugins/utils/grapple.nix
-    ./plugins/utils/illuminate.nix
+    # ./plugins/utils/illuminate.nix
     ./plugins/utils/mini.nix
     ./plugins/utils/nvim-autopairs.nix
     ./plugins/utils/oil.nix
