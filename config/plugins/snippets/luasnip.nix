@@ -12,4 +12,22 @@
       }
     ];
   };
+  keymaps = [
+    {
+      key = "<M-l>";
+      action.__raw = ''function() require("luasnip").jump(1) end'';
+      options = {
+        silent = true;
+      };
+      mode = ["i" "s"];
+    }
+    {
+      key = "<M-h>";
+      action.__raw = ''function() require("luasnip").jump(-1) end'';
+      options = {
+        silent = true;
+      };
+      mode = ["i" "s"];
+    }
+  ];
 }
