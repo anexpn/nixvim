@@ -226,7 +226,7 @@
       action = "<C-W>j";
       options = {
         silent = true;
-        desc = "Move to Window Bellow";
+        desc = "Move to Window Below";
       };
     }
     {

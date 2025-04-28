@@ -4,6 +4,7 @@
       enable = true;
       modules = {
         ai = {};
+        icons = {};
         surround = {
           mappings = {
             add = "gsa"; # Add surrounding in Normal and Visual modes
@@ -16,12 +17,20 @@
           };
         };
       };
+      mockDevIcons = true;
     };
-    which-key.operators = {
-      gsa = "Add surrounding";
-    };
-    which-key.registrations = {
-      "gs" = "+surround";
-    };
+    # which-key.settings.operators = {
+    #   gsa = "Add surrounding";
+    # };
+    # deprecated? use settings.defer?
+    which-key.settings.spec = [
+      {
+        __unkeyed-1 = "gs";
+        group = "+surround";
+      }
+    ];
+    # which-key.registrations = {
+    #   "gs" = "+surround";
+    # };
   };
 }
