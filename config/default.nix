@@ -49,8 +49,6 @@
     ./plugins/utils/whichkey.nix
     ./plugins/utils/toggleterm.nix
 
-    ./plugins/utils/firenvim.nix
-
     ./plugins/langs/haskell/telescope_hoogle.nix
 
     # Overrided by the above
