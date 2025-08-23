@@ -4,9 +4,7 @@
     ./colorschemes.nix
     ./autocmd.nix
 
-    ./plugins/completion/cmp.nix
-    ./plugins/completion/lspkind.nix
-    ./plugins/completion/copilot-cmp.nix
+    ./plugins/completion/blink-cmp.nix
 
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix

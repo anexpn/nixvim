@@ -21,7 +21,6 @@
           treesitter_context = true;
           telescope.enabled = true;
           indent_blankline.enabled = true;
-          mini.enabled = true;
           native_lsp = {
             enabled = true;
             inlay_hints = {
