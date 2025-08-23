@@ -90,5 +90,64 @@
     if vim.fn.has("nvim-0.10") == 1 then
       vim.opt.smoothscroll = true
     end
+
+    -- Custom command to show recently added plugins and their usage
+    vim.api.nvim_create_user_command('RecentPlugins', function()
+      local recent_plugins = {
+        {
+          name = "grug-far",
+          date = "2025-08-23",
+          description = "Powerful find and replace with live preview",
+          keymaps = {
+            "<leader>sr = Open grug-far",
+            "<leader>sw = Search word under cursor",
+            "<leader>sf = Search in current file",
+            "<leader>sF = Search in all files"
+          },
+          usage = "Use <leader>sr to open find/replace interface with live preview"
+        },
+        {
+          name = "nvim-surround", 
+          date = "2025-08-23",
+          description = "Add/delete/change surrounding delimiter pairs",
+          keymaps = {
+            "gz{motion}{char} = Add surrounding",
+            "gzd{char} = Delete surrounding", 
+            "gzc{old}{new} = Change surrounding",
+            "gz in visual = Surround selection"
+          },
+          usage = "Use gz to add surroundings, gzd to delete, gzc to change"
+        }
+      }
+
+      local lines = {"🔌 Recently Added Plugins", ""}
+      
+      for _, plugin in ipairs(recent_plugins) do
+        table.insert(lines, "📦 " .. plugin.name .. " (" .. plugin.date .. ")")
+        table.insert(lines, "   " .. plugin.description)
+        table.insert(lines, "")
+        table.insert(lines, "   ⌨️  Keymaps:")
+        for _, keymap in ipairs(plugin.keymaps) do
+          table.insert(lines, "      • " .. keymap)
+        end
+        table.insert(lines, "")
+        table.insert(lines, "   💡 " .. plugin.usage)
+        table.insert(lines, string.rep("─", 60))
+        table.insert(lines, "")
+      end
+      
+      -- Create a scratch buffer to display the info
+      local buf = vim.api.nvim_create_buf(false, true)
+      vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
+      vim.api.nvim_buf_set_option(buf, 'modifiable', false)
+      vim.api.nvim_buf_set_option(buf, 'filetype', 'markdown')
+      
+      -- Open in a new window
+      vim.cmd('vsplit')
+      vim.api.nvim_win_set_buf(0, buf)
+      vim.api.nvim_buf_set_name(buf, "Recent Plugins")
+    end, {
+      desc = "Show recently added plugins and their usage"
+    })
   '';
 }

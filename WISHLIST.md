@@ -1,7 +1,7 @@
 # NixVim Plugin Wishlist
 
 ## Search & Replace
-- **grug-far** - Powerful find and replace with ripgrep/ast-grep support, live preview, multiline search, and script-based replacement
+- ~~**grug-far**~~ - ✅ **COMPLETED** - Powerful find and replace with ripgrep/ast-grep support, live preview, multiline search, and script-based replacement
 
 ## Git Integration
 - **diffview** - Single tabpage interface for cycling through diffs, merge conflict resolution, file history tracking
@@ -28,7 +28,7 @@
 ## Text Manipulation
 - **move.nvim** - Enhanced text movement (lines/blocks/words) with auto-indentation using Alt+hjkl keys
 - **duplicate.nvim** - Advanced text duplication for lines and visual selections with configurable behavior
-- **nvim-surround** - Add/delete/change surrounding delimiter pairs with dot-repeat support and Tree-sitter integration
+- ~~**nvim-surround**~~ - ✅ **COMPLETED** - Add/delete/change surrounding delimiter pairs with dot-repeat support and Tree-sitter integration
 
 ## File Management
 - **yazi.nvim** - Modern terminal file manager integration with floating window, split highlighting, and plugin support

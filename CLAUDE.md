@@ -59,3 +59,13 @@ Plugins are organized by category in `config/plugins/`:
 - Uses alejandra for Nix code formatting
 - Recent migration from nvim-cmp to blink-cmp for improved completion performance
 - Supports both standalone usage and home-manager integration via flake modules
+
+## Plugin Management Reminders
+
+**IMPORTANT**: When adding new plugins, remember to:
+1. Update the `recent_plugins` table in `config/options.nix` (around line 96) with:
+   - Plugin name and date added
+   - Description of functionality
+   - Key mappings and usage instructions
+2. Update `WISHLIST.md` to mark the plugin as completed
+3. The `:RecentPlugins` command shows users the latest plugin additions and how to use them
