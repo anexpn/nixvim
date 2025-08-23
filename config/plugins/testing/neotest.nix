@@ -68,11 +68,7 @@
   };
 
   keymaps = [
-    {
-      mode = "n";
-      key = "<leader>t";
-      action = "+test";
-    }
+    # Test group definition moved to whichkey.nix
     {
       mode = "n";
       key = "<leader>tt";

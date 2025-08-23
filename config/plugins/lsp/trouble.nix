@@ -8,7 +8,7 @@
       key = "<leader>xx";
       action = "<cmd>Trouble diagnostics toggle<cr>";
       options = {
-        desc = "Diagnostics (workspace) (Trouble)";
+        desc = "Diagnostics (Workspace)";
       };
     }
     {
@@ -16,7 +16,7 @@
       key = "<leader>xX";
       action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options = {
-        desc = "Diagnostics (buffer) (Trouble)";
+        desc = "Diagnostics (Buffer)";
       };
     }
     {
@@ -24,7 +24,7 @@
       key = "<leader>xL";
       action = "<cmd>Trouble loclist toggle<cr>";
       options = {
-        desc = "Location list (Trouble)";
+        desc = "Location List";
       };
     }
     {
@@ -32,7 +32,7 @@
       key = "<leader>xQ";
       action = "<cmd>Trouble qflist toggle<cr>";
       options = {
-        desc = "Quickfix list (Trouble)";
+        desc = "Quickfix List";
       };
     }
     {
@@ -40,7 +40,7 @@
       key = "<leader>cs";
       action = "<cmd>Trouble symbols toggle focus=false<cr>";
       options = {
-        desc = "Symbols (Trouble)";
+        desc = "Document Symbols";
       };
     }
     {
@@ -48,7 +48,7 @@
       key = "<leader>cl";
       action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
       options = {
-        desc = "LSP (Trouble)";
+        desc = "LSP Definitions & References";
       };
     }
     {
@@ -69,7 +69,7 @@
         '';
       };
       options = {
-        desc = "Previous Trouble/Quickfix item";
+        desc = "Previous Trouble/Quickfix Item";
       };
     }
     {
@@ -90,7 +90,7 @@
         '';
       };
       options = {
-        desc = "Next Trouble/Quickfix item";
+        desc = "Next Trouble/Quickfix Item";
       };
     }
   ];

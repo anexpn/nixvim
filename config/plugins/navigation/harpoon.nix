@@ -11,7 +11,7 @@
       action.__raw = "function() require('harpoon'):list():add() end";
       options = {
         silent = true;
-        desc = "Harpoon add";
+        desc = "Add to Harpoon";
       };
     }
     {
@@ -25,7 +25,7 @@
       '';
       options = {
         silent = true;
-        desc = "Harpoon quick menu";
+        desc = "Harpoon Quick Menu";
       };
     }
     {
@@ -34,7 +34,7 @@
       action.__raw = "function() require('harpoon'):list():select(1) end";
       options = {
         silent = true;
-        desc = "Harpoon 1";
+        desc = "Jump to File 1";
       };
     }
     {
@@ -43,7 +43,7 @@
       action.__raw = "function() require('harpoon'):list():select(2) end";
       options = {
         silent = true;
-        desc = "Harpoon 2";
+        desc = "Jump to File 2";
       };
     }
     {
@@ -52,7 +52,7 @@
       action.__raw = "function() require('harpoon'):list():select(3) end";
       options = {
         silent = true;
-        desc = "Harpoon 3";
+        desc = "Jump to File 3";
       };
     }
     {
@@ -61,7 +61,7 @@
       action.__raw = "function() require('harpoon'):list():select(4) end";
       options = {
         silent = true;
-        desc = "Harpoon 4";
+        desc = "Jump to File 4";
       };
     }
   ];

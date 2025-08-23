@@ -2,64 +2,7 @@
   globals.mapleader = " ";
 
   keymaps = [
-    # Whichkey Sections
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = "+file";
-    }
-    {
-      mode = "n";
-      key = "<leader>s";
-      action = "+search";
-    }
-    {
-      mode = "n";
-      key = "<leader>q";
-      action = "+quit";
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>g";
-      action = "+git";
-    }
-    {
-      mode = "n";
-      key = "<leader>u";
-      action = "+ui";
-    }
-    {
-      mode = "n";
-      key = "<leader>w";
-      action = "+window";
-    }
-    {
-      mode = "n";
-      key = "<leader><Tab>";
-      action = "+tab";
-    }
-    {
-      mode = "n";
-      key = "<leader>b";
-      action = "+buffer";
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>c";
-      action = "+code";
-    }
-    {
-      mode = "n";
-      key = "<leader>x";
-      action = "+quickfix";
-    }
-    # Whichkey Sections ends
+    # Which-key group definitions are now handled in whichkey.nix
 
     # Tabs
     {
@@ -68,7 +11,7 @@
       action = "<cmd>tabnext<cr>";
       options = {
         silent = true;
-        desc = "Next";
+        desc = "Next Tab";
       };
     }
     {
@@ -77,7 +20,7 @@
       action = "<cmd>tabprevious<cr>";
       options = {
         silent = true;
-        desc = "Prev";
+        desc = "Previous Tab";
       };
     }
     {
@@ -86,7 +29,7 @@
       action = "<cmd>tabnew<cr>";
       options = {
         silent = true;
-        desc = "New";
+        desc = "New Tab";
       };
     }
     {
@@ -95,7 +38,7 @@
       action = "<cmd>tabclose<cr>";
       options = {
         silent = true;
-        desc = "Close";
+        desc = "Close Tab";
       };
     }
     {
@@ -104,7 +47,7 @@
       action = "<cmd>tabonly<cr>";
       options = {
         silent = true;
-        desc = "Only this";
+        desc = "Close Other Tabs";
       };
     }
     # Tabs ends
@@ -115,7 +58,7 @@
       key = "<leader>bd";
       action = "<cmd>bdelete<cr>";
       options = {
-        desc = "Close";
+        desc = "Close Buffer";
       };
     }
     {
@@ -123,7 +66,7 @@
       key = "<leader>bb";
       action = "<cmd>e #<cr>";
       options = {
-        desc = "Switch";
+        desc = "Switch Buffer";
       };
     }
     {
@@ -131,7 +74,7 @@
       key = "<leader>`";
       action = "<cmd>e #<cr>";
       options = {
-        desc = "Switch (buffer)";
+        desc = "Switch Buffer (Alt)";
       };
     }
     {
@@ -139,7 +82,7 @@
       key = "<S-h>";
       action = "<cmd>bprevious<cr>";
       options = {
-        desc = "Previous buffer";
+        desc = "Previous Buffer";
       };
     }
     {
@@ -147,7 +90,7 @@
       key = "<S-l>";
       action = "<cmd>bnext<cr>";
       options = {
-        desc = "Next buffer";
+        desc = "Next Buffer";
       };
     }
     # Buffers ends
@@ -159,7 +102,7 @@
       action = "<C-W>p";
       options = {
         silent = true;
-        desc = "Switch";
+        desc = "Switch Window";
       };
     }
     {
@@ -168,7 +111,7 @@
       action = "<C-W>c";
       options = {
         silent = true;
-        desc = "Close";
+        desc = "Close Window";
       };
     }
     {
@@ -177,7 +120,7 @@
       action = "<C-W>s";
       options = {
         silent = true;
-        desc = "Split below";
+        desc = "Split Window Below";
       };
     }
     {
@@ -186,7 +129,7 @@
       action = "<C-W>v";
       options = {
         silent = true;
-        desc = "Split right";
+        desc = "Split Window Right";
       };
     }
     {
@@ -195,7 +138,7 @@
       action = "<C-W>h";
       options = {
         silent = true;
-        desc = "Move to left";
+        desc = "Move to Left Window";
       };
     }
     {
@@ -204,7 +147,7 @@
       action = "<C-W>l";
       options = {
         silent = true;
-        desc = "Move to right";
+        desc = "Move to Right Window";
       };
     }
     {
@@ -213,7 +156,7 @@
       action = "<C-W>k";
       options = {
         silent = true;
-        desc = "Move to above";
+        desc = "Move to Upper Window";
       };
     }
     {
@@ -222,7 +165,7 @@
       action = "<C-W>j";
       options = {
         silent = true;
-        desc = "Move to below";
+        desc = "Move to Lower Window";
       };
     }
     {
@@ -230,7 +173,7 @@
       key = "<C-Up>";
       action = "<cmd>resize +2<cr>";
       options = {
-        desc = "Expand height";
+        desc = "Expand Window Height";
       };
     }
     {
@@ -238,7 +181,7 @@
       key = "<C-Down>";
       action = "<cmd>resize -2<cr>";
       options = {
-        desc = "Shrink height";
+        desc = "Shrink Window Height";
       };
     }
     {
@@ -246,7 +189,7 @@
       key = "<C-Left>";
       action = "<cmd>vertical resize -2<cr>";
       options = {
-        desc = "Expand width";
+        desc = "Shrink Window Width";
       };
     }
     {
@@ -254,7 +197,7 @@
       key = "<C-Right>";
       action = "<cmd>vertical resize +2<cr>";
       options = {
-        desc = "Shrink width";
+        desc = "Expand Window Width";
       };
     }
     # Windows ends
@@ -266,7 +209,7 @@
       action = "<cmd>quitall<cr><esc>";
       options = {
         silent = true;
-        desc = "Quit all";
+        desc = "Quit All";
       };
     }
     # Quit/Session ends
@@ -278,7 +221,7 @@
       action = ":lua ToggleLineNumber()<cr>";
       options = {
         silent = true;
-        desc = "Toggle line number";
+        desc = "Toggle Line Numbers";
       };
     }
     {
@@ -287,7 +230,7 @@
       action = ":lua ToggleRelativeLineNumber()<cr>";
       options = {
         silent = true;
-        desc = "Toggle relative line number";
+        desc = "Toggle Relative Line Numbers";
       };
     }
     {
@@ -296,7 +239,7 @@
       action = ":lua ToggleWrap()<cr>";
       options = {
         silent = true;
-        desc = "Toggle line wrap";
+        desc = "Toggle Line Wrap";
       };
     }
     {
@@ -305,7 +248,7 @@
       action = "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>";
       options = {
         silent = true;
-        desc = "Redraw/Clear hlsearch/Diff update";
+        desc = "Redraw Screen & Clear Highlights";
       };
     }
     # UI ends
@@ -316,7 +259,7 @@
       key = "<A-j>";
       action = "<cmd>m .+1<cr>==";
       options = {
-        desc = "Move line down";
+        desc = "Move Line Down";
       };
     }
     {
@@ -324,7 +267,7 @@
       key = "<A-k>";
       action = "<cmd>m .-2<cr>==";
       options = {
-        desc = "Move line up";
+        desc = "Move Line Up";
       };
     }
     {
@@ -332,7 +275,7 @@
       key = "<A-j>";
       action = "<esc><cmd>m .+1<cr>==gi";
       options = {
-        desc = "Move line down";
+        desc = "Move Line Down";
       };
     }
     {
@@ -340,7 +283,7 @@
       key = "<A-k>";
       action = "<esc><cmd>m .-2<cr>==gi";
       options = {
-        desc = "Move line up";
+        desc = "Move Line Up";
       };
     }
     {
@@ -349,7 +292,7 @@
       action = ":m '>+1<cr>gv=gv";
       options = {
         silent = true;
-        desc = "Move line down";
+        desc = "Move Line Down";
       };
     }
     {
@@ -358,7 +301,7 @@
       action = ":m '<-2<cr>gv=gv";
       options = {
         silent = true;
-        desc = "Move line up";
+        desc = "Move Line Up";
       };
     }
     {
@@ -366,7 +309,7 @@
       key = "J";
       action = "myJ`y"; # Side effect: overwrite the y mark
       options = {
-        desc = "Allow cursor to stay in the same place after appending to current line ";
+        desc = "Join Lines (Keep Cursor Position)";
       };
     }
     # Move Lines ends
@@ -379,7 +322,7 @@
       action = "'Nn'[v:searchforward].'zv'";
       options = {
         expr = true;
-        desc = "Next search result";
+        desc = "Next Search Result";
       };
     }
     {
@@ -388,7 +331,7 @@
       action = "'Nn'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Next search result";
+        desc = "Next Search Result";
       };
     }
     {
@@ -397,7 +340,7 @@
       action = "'Nn'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Next search result";
+        desc = "Next Search Result";
       };
     }
     {
@@ -406,7 +349,7 @@
       action = "'nN'[v:searchforward].'zv'";
       options = {
         expr = true;
-        desc = "Previous search result";
+        desc = "Previous Search Result";
       };
     }
     {
@@ -415,7 +358,7 @@
       action = "'nN'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Previous search result";
+        desc = "Previous Search Result";
       };
     }
     {
@@ -424,7 +367,7 @@
       action = "'nN'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Previous search result";
+        desc = "Previous Search Result";
       };
     }
     # better indenting
@@ -446,7 +389,7 @@
       key = "<leader>xl";
       action = "<cmd>lopen<cr>";
       options = {
-        desc = "Location list";
+        desc = "Open Location List";
       };
     }
     {
@@ -454,7 +397,7 @@
       key = "<leader>xq";
       action = "<cmd>copen<cr>";
       options = {
-        desc = "Quickfix list";
+        desc = "Open Quickfix List";
       };
     }
     {
@@ -463,7 +406,7 @@
       action = ":<C-u>silent! cprev<cr>";
       options = {
         silent = true;
-        desc = "Previous quickfix";
+        desc = "Previous Quickfix Item";
       };
     }
     {
@@ -472,7 +415,7 @@
       action = ":<C-u>silent! cnext<cr>";
       options = {
         silent = true;
-        desc = "Next quickfix";
+        desc = "Next Quickfix Item";
       };
     }
     # Quickfix ends
@@ -481,21 +424,21 @@
       mode = ["n" "v"];
       key = "<leader>Y";
       action = ''"+y'';
-      options = {desc = "Copy (system clipboard)";};
+      options = {desc = "Copy to System Clipboard";};
     }
 
     {
       mode = ["n" "v"];
       key = "<leader>P";
       action = ''"+p'';
-      options = {desc = "Paste (system clipboard)";};
+      options = {desc = "Paste from System Clipboard";};
     }
 
     {
       mode = ["n" "v"];
       key = "<leader>D";
       action = ''"_d'';
-      options = {desc = "Delete to void register";};
+      options = {desc = "Delete to Void Register";};
     }
   ];
   extraConfigLua = ''

@@ -13,7 +13,7 @@
       action = "<cmd>UndotreeToggle<CR>";
       options = {
         silent = true;
-        desc = "Undotree";
+        desc = "Undo Tree";
       };
     }
   ];

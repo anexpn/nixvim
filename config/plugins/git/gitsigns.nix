@@ -33,7 +33,7 @@
       action = ":Gitsigns blame_line<CR>";
       options = {
         silent = true;
-        desc = "Blame line";
+        desc = "Show Git Blame";
       };
     }
     {
@@ -42,7 +42,7 @@
       action = ":Gitsigns diffthis<CR>";
       options = {
         silent = true;
-        desc = "Diff this";
+        desc = "Show Git Diff";
       };
     }
     {
@@ -51,7 +51,7 @@
       action = ":Gitsigns reset_buffer<CR>";
       options = {
         silent = true;
-        desc = "Reset buffer";
+        desc = "Reset Buffer Changes";
       };
     }
     {
@@ -60,7 +60,7 @@
       action = ":Gitsigns stage_buffer<CR>";
       options = {
         silent = true;
-        desc = "Stage buffer";
+        desc = "Stage Buffer Changes";
       };
     }
   ];

@@ -42,7 +42,7 @@
       key = "-";
       action = ":Oil<CR>";
       options = {
-        desc = "Oil";
+        desc = "File Explorer";
         silent = true;
       };
     }
