@@ -257,15 +257,6 @@
         desc = "Shrink width";
       };
     }
-    {
-      mode = "n";
-      key = "<C-s>";
-      action = "<cmd>w<cr><esc>";
-      options = {
-        silent = true;
-        desc = "Save file";
-      };
-    }
     # Windows ends
 
     # Quit/Session

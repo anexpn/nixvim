@@ -22,7 +22,7 @@
         "o"
       ];
       key = "s";
-      action = "<cmd>lua require('flash').jump()<cr>";
+      action.__raw = "function() require('flash').jump() end";
       options = {
         desc = "Flash";
       };
@@ -34,8 +34,21 @@
         "x"
         "o"
       ];
+      key = "<C-s>";
+      action.__raw = "function() require('flash').jump({continue = true}) end";
+      options = {
+        desc = "Flash (continue)";
+      };
+    }
+
+    {
+      mode = [
+        "n"
+        "x"
+        "o"
+      ];
       key = "S";
-      action = "<cmd>lua require('flash').treesitter()<cr>";
+      action.__raw = "function() require('flash').treesitter() end";
       options = {
         desc = "Flash (treesitter)";
       };
@@ -44,7 +57,7 @@
     {
       mode = "o";
       key = "r";
-      action = "<cmd>lua require('flash').remote()<cr>";
+      action.__raw = "function() require('flash').remote() end";
       options = {
         desc = "Flash (remote)";
       };
@@ -56,7 +69,7 @@
         "o"
       ];
       key = "R";
-      action = "<cmd>lua require('flash').treesitter_search()<cr>";
+      action.__raw = "function() require('flash').treesitter_search() end";
       options = {
         desc = "Flash (treesitter search)";
       };
