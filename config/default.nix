@@ -33,20 +33,25 @@
     ./plugins/ui/noice.nix
     ./plugins/ui/nvim-notify.nix
     ./plugins/ui/bufferline.nix
+    ./plugins/ui/ufo.nix
+    ./plugins/ui/illuminate.nix
 
-    ./plugins/utils/flash.nix
-    ./plugins/utils/oil.nix
-    ./plugins/utils/comment.nix
-    ./plugins/utils/grug-far.nix
-    ./plugins/utils/harpoon.nix
-    ./plugins/utils/hardtime.nix
-    ./plugins/utils/illuminate.nix
-    ./plugins/utils/nvim-autopairs.nix
-    ./plugins/utils/nvim-surround.nix
-    ./plugins/utils/ufo.nix
-    ./plugins/utils/undotree.nix
-    ./plugins/utils/whichkey.nix
-    ./plugins/utils/toggleterm.nix
+    ./plugins/navigation/flash.nix
+    ./plugins/navigation/harpoon.nix
+
+    ./plugins/editing/comment.nix
+    ./plugins/editing/nvim-autopairs.nix
+    ./plugins/editing/nvim-surround.nix
+
+    ./plugins/search/grug-far.nix
+
+    ./plugins/files/oil.nix
+
+    ./plugins/terminal/toggleterm.nix
+
+    ./plugins/workflow/hardtime.nix
+    ./plugins/workflow/undotree.nix
+    ./plugins/workflow/whichkey.nix
 
     ./plugins/langs/haskell/telescope_hoogle.nix
 

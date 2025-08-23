@@ -12,6 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Update dependencies**: `just update` (updates flake inputs)
 - **Clean**: `just clean` (garbage collect and clean build artifacts)
 
+**IMPORTANT**: Always run `git add .` before executing `nix flake check` or `nix build` commands. Nix flakes only see files that are tracked by git, so unstaged changes will cause build failures.
+
 ## Architecture Overview
 
 This is a NixVim configuration written in Nix that creates a complete Neovim setup. The configuration is structured as a Nix flake with modular organization:
