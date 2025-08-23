@@ -6,7 +6,7 @@
     {
       mode = "n";
       key = "<leader>xx";
-      action = "<cmd>TroubleToggle workspace_diagnostics<cr>";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
       options = {
         desc = "Diagnostics (workspace) (Trouble)";
       };
@@ -14,7 +14,7 @@
     {
       mode = "n";
       key = "<leader>xX";
-      action = "<cmd>TroubleToggle document_diagnostics<cr>";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options = {
         desc = "Diagnostics (buffer) (Trouble)";
       };
@@ -22,7 +22,7 @@
     {
       mode = "n";
       key = "<leader>xL";
-      action = "<cmd>TroubleToggle loclist<cr>";
+      action = "<cmd>Trouble loclist toggle<cr>";
       options = {
         desc = "Location list (Trouble)";
       };
@@ -30,9 +30,25 @@
     {
       mode = "n";
       key = "<leader>xQ";
-      action = "<cmd>TroubleToggle qflist<cr>";
+      action = "<cmd>Trouble qflist toggle<cr>";
       options = {
         desc = "Quickfix list (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cs";
+      action = "<cmd>Trouble symbols toggle focus=false<cr>";
+      options = {
+        desc = "Symbols (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cl";
+      action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
+      options = {
+        desc = "LSP (Trouble)";
       };
     }
     {
@@ -42,7 +58,7 @@
         __raw = ''
           function()
             if require("trouble").is_open() then
-              require("trouble").previous({ skip_groups = true, jump = true })
+              require("trouble").prev({ skip_groups = true, jump = true })
             else
               local ok, err = pcall(vim.cmd.cprev)
               if not ok then
