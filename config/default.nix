@@ -37,6 +37,7 @@
     ./plugins/utils/flash.nix
     ./plugins/utils/oil.nix
     ./plugins/utils/comment.nix
+    ./plugins/utils/grug-far.nix
     ./plugins/utils/harpoon.nix
     ./plugins/utils/hardtime.nix
     ./plugins/utils/illuminate.nix

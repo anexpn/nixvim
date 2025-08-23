@@ -5,9 +5,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Development Commands
 
 - **Build and run**: `nix run .` or `just run` (using justfile)
-- **Formatting**: `nix fmt` (uses alejandra formatter)
-- **Development shell**: `nix develop` (includes pre-commit hooks)
-- **Check/Test**: `nix flake check` (note: currently has nixvimLib issue)
+- **Build only**: `nix build` or `just build`
+- **Formatting**: `nix fmt` or `just format` (uses alejandra formatter)
+- **Development shell**: `nix develop` or `just develop` (includes pre-commit hooks)
+- **Check/Test**: `nix flake check` or `just check`
+- **Update dependencies**: `just update` (updates flake inputs)
+- **Clean**: `just clean` (garbage collect and clean build artifacts)
 
 ## Architecture Overview
 
@@ -26,11 +29,11 @@ This is a NixVim configuration written in Nix that creates a complete Neovim set
 
 ### Plugin Structure
 Plugins are organized by category in `config/plugins/`:
-- `completion/`: CMP, copilot-cmp, lspkind, schemastore
+- `completion/`: blink-cmp (modern completion engine)
 - `git/`: Git integration (gitsigns, lazygit, worktree)
 - `lsp/`: Language server setup (conform, fidget, hlchunk, lsp, lspsaga, none-ls, trouble)
 - `snippets/`: LuaSnip configuration
-- `statusline/`: Status line plugins (lualine, staline)
+- `statusline/`: Status line plugins (lualine)
 - `treesitter/`: Treesitter, treesitter-textobjects, treesitter-context
 - `ui/`: UI enhancements (telescope, web-devicons, alpha, indent-blankline, noice, nvim-notify, bufferline)
 - `utils/`: Utility plugins (comment, flash, hardtime, harpoon, illuminate, nvim-autopairs, oil, toggleterm, ufo, undotree, whichkey)
@@ -47,10 +50,12 @@ Plugins are organized by category in `config/plugins/`:
 - Pre-commit hooks with statix and alejandra
 - Multi-platform support (Linux and macOS, both x86_64 and aarch64)
 - Modular plugin system allows easy enabling/disabling of features
+- Home-manager integration support for declarative system configuration
 
 ## Development Notes
 
-- The flake currently has a nixvimLib check issue that prevents `nix flake check` from working
 - Configuration uses NixVim's module system for type-safe Neovim configuration
 - All plugins are configured in separate .nix files for maintainability
 - Uses alejandra for Nix code formatting
+- Recent migration from nvim-cmp to blink-cmp for improved completion performance
+- Supports both standalone usage and home-manager integration via flake modules
