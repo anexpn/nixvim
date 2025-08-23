@@ -42,6 +42,7 @@
     ./plugins/utils/hardtime.nix
     ./plugins/utils/illuminate.nix
     ./plugins/utils/nvim-autopairs.nix
+    ./plugins/utils/nvim-surround.nix
     ./plugins/utils/ufo.nix
     ./plugins/utils/undotree.nix
     ./plugins/utils/whichkey.nix
