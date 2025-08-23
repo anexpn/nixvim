@@ -1,8 +1,10 @@
 {
   plugins.none-ls = {
     enable = true;
+    settings = {
+      update_in_insert = false;
+    };
     enableLspFormat = true;
-    updateInInsert = false;
     sources = {
       code_actions = {
         gitsigns.enable = true;
@@ -16,7 +18,7 @@
         alejandra.enable = true;
         black = {
           enable = true;
-          withArgs = ''
+          settings = ''
             {
               extra_args = { "--fast" },
             }
@@ -25,7 +27,7 @@
         prettier = {
           enable = true;
           disableTsServerFormatter = true;
-          withArgs = ''
+          settings = ''
             {
               extra_args = { "--no-semi", "--single-quote" },
             }
@@ -43,7 +45,7 @@
       action = "<cmd>lua vim.lsp.buf.format()<cr>";
       options = {
         silent = true;
-        desc = "Format";
+        desc = "[LSP] Format";
       };
     }
   ];

@@ -21,7 +21,7 @@
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             keywordLength = 3;
           }
-          # {name = "copilot";}
+          {name = "copilot";}
           {
             name = "path"; # file system paths
             keywordLength = 3;
@@ -54,7 +54,7 @@
     cmp-buffer = {enable = true;};
     cmp-path = {enable = true;}; # file system paths
     cmp_luasnip = {enable = true;}; # snippets
-    cmp-cmdline = {enable = false;}; # autocomplete for cmdline
+    cmp-cmdline = {enable = true;}; # autocomplete for cmdline
   };
   extraConfigLua = ''
           luasnip = require("luasnip")

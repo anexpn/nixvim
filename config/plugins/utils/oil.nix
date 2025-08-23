@@ -42,7 +42,7 @@
       key = "-";
       action = ":Oil<CR>";
       options = {
-        desc = "Open Parent Directory";
+        desc = "Oil";
         silent = true;
       };
     }

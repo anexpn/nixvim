@@ -1,66 +1,74 @@
 {
   plugins.lspsaga = {
     enable = true;
-    beacon = {
-      enable = true;
-    };
-    ui = {
-      border = "rounded"; # One of none, single, double, rounded, solid, shadow
-      codeAction = "💡"; # Can be any symbol you want 💡
-    };
-    hover = {
-      openCmd = "!floorp"; # Choose your browser
-      openLink = "gx";
-    };
-    diagnostic = {
-      borderFollow = true;
-      diagnosticOnlyCurrent = false;
-      showCodeAction = true;
-    };
-    symbolInWinbar = {
-      enable = true; # Breadcrumbs
-    };
-    codeAction = {
-      extendGitSigns = false;
-      showServerName = true;
-      onlyInCursor = true;
-      numShortcut = true;
-      keys = {
-        exec = "<CR>";
-        quit = ["<Esc>" "q"];
+    settings = {
+      beacon = {
+        enable = true;
       };
-    };
-    lightbulb = {
-      enable = false;
-      sign = false;
-      virtualText = true;
-    };
-    implement = {
-      enable = false;
-    };
-    rename = {
-      autoSave = false;
-      keys = {
-        exec = "<CR>";
-        quit = ["<C-k>" "<Esc>"];
-        select = "x";
+      ui = {
+        border = "rounded"; # One of none, single, double, rounded, solid, shadow
+        code_action = "💡"; # Can be any symbol you want 💡
       };
-    };
-    outline = {
-      autoClose = true;
-      autoPreview = true;
-      closeAfterJump = true;
-      layout = "normal"; # normal or float
-      winPosition = "right"; # left or right
-      keys = {
-        jump = "e";
-        quit = "q";
-        toggleOrJump = "o";
+      hover = {
+        open_cmd = "!floorp"; # Choose your browser
+        open_link = "gx";
       };
-    };
-    scrollPreview = {
-      scrollDown = "<C-f>";
-      scrollUp = "<C-b>";
+      diagnostic = {
+        border_follow = true;
+        diagnostic_only_current = false;
+        show_code_action = true;
+      };
+      symbol_in_winbar = {
+        enable = true; # Breadcrumbs
+      };
+      code_action = {
+        extend_git_signs = false;
+        show_server_name = true;
+        only_in_cursor = true;
+        num_shortcut = true;
+        keys = {
+          exec = "<CR>";
+          quit = [
+            "<Esc>"
+            "q"
+          ];
+        };
+      };
+      lightbulb = {
+        enable = false;
+        sign = false;
+        virtual_text = true;
+      };
+      implement = {
+        enable = false;
+      };
+      rename = {
+        auto_save = false;
+        keys = {
+          exec = "<CR>";
+          quit = [
+            "<C-k>"
+            "<Esc>"
+          ];
+          select = "x";
+        };
+      };
+      outline = {
+        auto_close = true;
+        auto_preview = true;
+        close_after_jump = true;
+        layout = "normal"; # normal or float
+        win_position = "right"; # left or right
+        keys = {
+          jump = "e";
+          quit = "q";
+          toggle_or_jump = "o";
+        };
+      };
+      scroll_preview = {
+        scroll_down = "<C-f>";
+        scroll_up = "<C-b>";
+      };
     };
   };
   keymaps = [
@@ -69,7 +77,7 @@
       key = "gd";
       action = "<cmd>Lspsaga goto_definition<CR>";
       options = {
-        desc = "Goto Definition (Lspsaga)";
+        desc = "[LSP] Goto definition";
         silent = true;
       };
     }
@@ -78,7 +86,7 @@
       key = "gr";
       action = "<cmd>Lspsaga finder ref<CR>";
       options = {
-        desc = "Goto References (Lspsaga)";
+        desc = "[LSP] Goto references";
         silent = true;
       };
     }
@@ -88,7 +96,7 @@
       key = "gI";
       action = "<cmd>Lspsaga finder imp<CR>";
       options = {
-        desc = "Goto Implementation (Lspsaga)";
+        desc = "[LSP] Goto implementation";
         silent = true;
       };
     }
@@ -98,7 +106,7 @@
       key = "gT";
       action = "<cmd>Lspsaga peek_type_definition<CR>";
       options = {
-        desc = "Type Definition (Lspsaga)";
+        desc = "[LSP] Peek type definition";
         silent = true;
       };
     }
@@ -108,7 +116,7 @@
       key = "K";
       action = "<cmd>Lspsaga hover_doc<CR>";
       options = {
-        desc = "Hover (Lspsaga)";
+        desc = "[LSP] Hover";
         silent = true;
       };
     }
@@ -118,7 +126,7 @@
       key = "<leader>cw";
       action = "<cmd>Lspsaga outline<CR>";
       options = {
-        desc = "Outline (Lspsaga)";
+        desc = "[LSP] Outline";
         silent = true;
       };
     }
@@ -128,7 +136,7 @@
       key = "<leader>cr";
       action = "<cmd>Lspsaga rename<CR>";
       options = {
-        desc = "Rename (Lspsaga)";
+        desc = "[LSP] Rename";
         silent = true;
       };
     }
@@ -138,7 +146,7 @@
       key = "<leader>ca";
       action = "<cmd>Lspsaga code_action<CR>";
       options = {
-        desc = "Code Action (Lspsaga)";
+        desc = "[LSP] Code Action";
         silent = true;
       };
     }
@@ -148,7 +156,7 @@
       key = "<leader>cd";
       action = "<cmd>Lspsaga show_line_diagnostics<CR>";
       options = {
-        desc = "Line Diagnostics (Lspsaga)";
+        desc = "[LSP] Line diagnostics";
         silent = true;
       };
     }
@@ -158,7 +166,7 @@
       key = "]d";
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options = {
-        desc = "Next Diagnostic (Lspsaga)";
+        desc = "[LSP] Next diagnostic";
         silent = true;
       };
     }
@@ -168,7 +176,7 @@
       key = "[d";
       action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
       options = {
-        desc = "Previous Diagnostic (Lspsaga)";
+        desc = "[LSP] Previous diagnostic";
         silent = true;
       };
     }

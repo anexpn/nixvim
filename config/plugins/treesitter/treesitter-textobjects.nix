@@ -1,6 +1,6 @@
 {
   plugins.treesitter-textobjects = {
-    enable = false;
+    enable = true;
     select = {
       enable = true;
       lookahead = true;
@@ -40,10 +40,10 @@
     swap = {
       enable = true;
       swapNext = {
-        "<leader>a" = "@parameters.inner";
+        "<leader>cn" = "@parameters.inner";
       };
       swapPrevious = {
-        "<leader>A" = "@parameter.outer";
+        "<leader>cp" = "@parameter.outer";
       };
     };
   };

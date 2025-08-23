@@ -28,48 +28,39 @@
   };
   keymaps = [
     {
-      mode = ["n" "v"];
-      key = "<leader>gh";
-      action = "gitsigns";
-      options = {
-        silent = true;
-        desc = "+hunks";
-      };
-    }
-    {
       mode = "n";
-      key = "<leader>ghb";
+      key = "<leader>gb";
       action = ":Gitsigns blame_line<CR>";
       options = {
         silent = true;
-        desc = "Blame Line";
+        desc = "Blame line";
       };
     }
     {
       mode = "n";
-      key = "<leader>ghd";
+      key = "<leader>gd";
       action = ":Gitsigns diffthis<CR>";
       options = {
         silent = true;
-        desc = "Diff This";
+        desc = "Diff this";
       };
     }
     {
       mode = "n";
-      key = "<leader>ghR";
+      key = "<leader>gR";
       action = ":Gitsigns reset_buffer<CR>";
       options = {
         silent = true;
-        desc = "Reset Buffer";
+        desc = "Reset buffer";
       };
     }
     {
       mode = "n";
-      key = "<leader>ghS";
+      key = "<leader>gS";
       action = ":Gitsigns stage_buffer<CR>";
       options = {
         silent = true;
-        desc = "Stage Buffer";
+        desc = "Stage buffer";
       };
     }
   ];

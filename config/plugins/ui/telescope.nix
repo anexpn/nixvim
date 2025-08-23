@@ -21,84 +21,77 @@
         };
         sorting_strategy = "ascending";
       };
+      pickers = {
+        colorscheme = {
+          enable_preview = true;
+        };
+      };
     };
     keymaps = {
       "<leader><space>" = {
         action = "find_files";
         options = {
-          desc = "Find Workspace Files";
+          desc = "Find files (workspace)";
         };
       };
       "<leader>/" = {
         action = "live_grep";
         options = {
-          desc = "Grep (root dir)";
-        };
-      };
-      "<leader>:" = {
-        action = "command_history";
-        options = {
-          desc = "Command History";
+          desc = "Grep (workspace)";
         };
       };
       "<leader>fR" = {
         action = "resume";
         options = {
-          desc = "Resume";
+          desc = "Resume last search";
         };
       };
       "<leader>fr" = {
         action = "oldfiles";
         options = {
-          desc = "Recent";
-        };
-      };
-      "<leader>fb" = {
-        action = "buffers";
-        options = {
-          desc = "Buffers";
+          desc = "Recent files";
         };
       };
       "<leader>," = {
         action = "buffers";
         options = {
-          desc = "Buffers";
+          desc = "List buffers";
         };
       };
       "<C-p>" = {
         action = "git_files";
         options = {
-          desc = "Search git files";
+          desc = "Find files (git)";
         };
       };
       "<leader>gc" = {
         action = "git_commits";
         options = {
-          desc = "Commits";
+          desc = "Search git commits";
         };
       };
       "<leader>gs" = {
         action = "git_status";
         options = {
-          desc = "Status";
+          desc = "Search git status";
         };
       };
       "<leader>sa" = {
         action = "autocommands";
         options = {
-          desc = "Auto Commands";
+          desc = "Autocommands";
         };
       };
       "<leader>sb" = {
         action = "current_buffer_fuzzy_find";
         options = {
-          desc = "Current Buffer";
+          desc = "Current buffer";
         };
       };
       "<leader>sc" = {
         action = "command_history";
         options = {
-          desc = "Command History";
+          desc = "Command history";
         };
       };
       "<leader>sC" = {
@@ -110,19 +103,19 @@
       "<leader>sD" = {
         action = "diagnostics";
         options = {
-          desc = "Workspace Diagnostics";
+          desc = "Diagnostics (workspace)";
         };
       };
       "<leader>sh" = {
         action = "help_tags";
         options = {
-          desc = "Help Pages";
+          desc = "Help pages";
         };
       };
       "<leader>sH" = {
         action = "highlights";
         options = {
-          desc = "Highlight Groups";
+          desc = "Highlights";
         };
       };
       "<leader>sk" = {
@@ -134,7 +127,7 @@
       "<leader>sM" = {
         action = "man_pages";
         options = {
-          desc = "Man Pages";
+          desc = "Man pages";
         };
       };
       "<leader>sm" = {
@@ -152,25 +145,25 @@
       "<leader>sR" = {
         action = "resume";
         options = {
-          desc = "Resume";
+          desc = "Resume last search";
         };
       };
       "<leader>ss" = {
         action = "lsp_document_symbols";
         options = {
-          desc = "Buffer Symbols";
+          desc = "Symbols (buffer)";
         };
       };
       "<leader>sS" = {
         action = "lsp_workspace_symbols";
         options = {
-          desc = "Workspace Symbols";
+          desc = "Symbols (workspace)";
         };
       };
       "<leader>uC" = {
         action = "colorscheme";
         options = {
-          desc = "Colorscheme Preview";
+          desc = "Colorscheme";
         };
       };
     };
@@ -181,7 +174,7 @@
       key = "<leader>sd";
       action = "<cmd>Telescope diagnostics bufnr=0<cr>";
       options = {
-        desc = "Buffer Diagnostics";
+        desc = "Diagnostics (buffer)";
       };
     }
     {
@@ -189,7 +182,7 @@
       key = "<leader>fe";
       action = "<cmd>Telescope file_browser<cr>";
       options = {
-        desc = "File Browser Workspace";
+        desc = "File browser (workspace)";
       };
     }
     {
@@ -197,7 +190,7 @@
       key = "<leader>fE";
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
       options = {
-        desc = "File Browser Current";
+        desc = "File browser (current file)";
       };
     }
     {
@@ -205,7 +198,7 @@
       key = "<leader>ff";
       action = "<cmd>Telescope frecency workspace=CWD prompt_title=Frecency(CWD)<cr>";
       options = {
-        desc = "Files Frecency (CWD)";
+        desc = "File frecency (cwd)";
       };
     }
     {
@@ -213,17 +206,8 @@
       key = "<leader>fF";
       action = "<cmd>Telescope frecency prompt_title=Frecency<cr>";
       options = {
-        desc = "Files Frecency";
+        desc = "File frecency";
       };
     }
   ];
-  extraConfigLua = ''
-    require("telescope").setup{
-      pickers = {
-        colorscheme = {
-          enable_preview = true
-        }
-      }
-    }
-  '';
 }

@@ -1,5 +1,6 @@
 {
-  plugins.lualine = {
+  plugins.web-devicons = {
     enable = true;
   };
 }
+

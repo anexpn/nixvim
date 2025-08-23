@@ -20,7 +20,7 @@
       key = "<esc>";
       action = "<C-\\><C-n>";
       options = {
-        desc = "Enter Normal Mode";
+        desc = "Enter normal mode";
       };
     }
     {
@@ -28,7 +28,7 @@
       key = "<C-h>";
       action = "<cmd>wincmd h<cr>";
       options = {
-        desc = "Go to Left Window";
+        desc = "Go to left window";
       };
     }
     {
@@ -36,7 +36,7 @@
       key = "<C-l>";
       action = "<cmd>wincmd l<cr>";
       options = {
-        desc = "Go to Right Window";
+        desc = "Go to right window";
       };
     }
     {
@@ -44,7 +44,7 @@
       key = "<C-j>";
       action = "<cmd>wincmd j<cr>";
       options = {
-        desc = "Go to Lower Window";
+        desc = "Go to lower window";
       };
     }
     {
@@ -52,7 +52,7 @@
       key = "<C-k>";
       action = "<cmd>wincmd k<cr>";
       options = {
-        desc = "Go to Upper Window";
+        desc = "Go to upper window";
       };
     }
   ];

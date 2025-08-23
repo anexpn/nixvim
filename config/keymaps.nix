@@ -6,7 +6,7 @@
     {
       mode = "n";
       key = "<leader>f";
-      action = "+find/file";
+      action = "+file";
     }
     {
       mode = "n";
@@ -16,10 +16,13 @@
     {
       mode = "n";
       key = "<leader>q";
-      action = "+quit/session";
+      action = "+quit";
     }
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>g";
       action = "+git";
     }
@@ -31,7 +34,7 @@
     {
       mode = "n";
       key = "<leader>w";
-      action = "+windows";
+      action = "+window";
     }
     {
       mode = "n";
@@ -43,21 +46,14 @@
       key = "<leader>b";
       action = "+buffer";
     }
-    # {
-    #   mode = ["n" "v"];
-    #   key = "<leader>d";
-    #   action = "+debug";
-    # }
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>c";
       action = "+code";
     }
-    # {
-    #   mode = ["n" "v"];
-    #   key = "<leader>t";
-    #   action = "+test";
-    # }
     {
       mode = "n";
       key = "<leader>x";
@@ -72,7 +68,7 @@
       action = "<cmd>tabnext<cr>";
       options = {
         silent = true;
-        desc = "Next Tab";
+        desc = "Next";
       };
     }
     {
@@ -81,7 +77,7 @@
       action = "<cmd>tabprevious<cr>";
       options = {
         silent = true;
-        desc = "Previous Tab";
+        desc = "Prev";
       };
     }
     {
@@ -90,7 +86,7 @@
       action = "<cmd>tabnew<cr>";
       options = {
         silent = true;
-        desc = "New Tab";
+        desc = "New";
       };
     }
     {
@@ -99,7 +95,7 @@
       action = "<cmd>tabclose<cr>";
       options = {
         silent = true;
-        desc = "Close Tab";
+        desc = "Close";
       };
     }
     {
@@ -108,7 +104,7 @@
       action = "<cmd>tabonly<cr>";
       options = {
         silent = true;
-        desc = "Close Other Tabs";
+        desc = "Only this";
       };
     }
     # Tabs ends
@@ -119,7 +115,7 @@
       key = "<leader>bd";
       action = "<cmd>bdelete<cr>";
       options = {
-        desc = "Delete Buffer";
+        desc = "Close";
       };
     }
     {
@@ -127,7 +123,7 @@
       key = "<leader>bb";
       action = "<cmd>e #<cr>";
       options = {
-        desc = "Switch to Other Buffer";
+        desc = "Switch";
       };
     }
     {
@@ -135,7 +131,7 @@
       key = "<leader>`";
       action = "<cmd>e #<cr>";
       options = {
-        desc = "Switch to Other Buffer";
+        desc = "Switch (buffer)";
       };
     }
     {
@@ -143,7 +139,7 @@
       key = "<S-h>";
       action = "<cmd>bprevious<cr>";
       options = {
-        desc = "Previous Buffer";
+        desc = "Previous buffer";
       };
     }
     {
@@ -151,7 +147,7 @@
       key = "<S-l>";
       action = "<cmd>bnext<cr>";
       options = {
-        desc = "Next Buffer";
+        desc = "Next buffer";
       };
     }
     # Buffers ends
@@ -163,7 +159,7 @@
       action = "<C-W>p";
       options = {
         silent = true;
-        desc = "Other Window";
+        desc = "Switch";
       };
     }
     {
@@ -172,7 +168,7 @@
       action = "<C-W>c";
       options = {
         silent = true;
-        desc = "Delete Window";
+        desc = "Close";
       };
     }
     {
@@ -181,7 +177,7 @@
       action = "<C-W>s";
       options = {
         silent = true;
-        desc = "Split Window Below";
+        desc = "Split below";
       };
     }
     {
@@ -190,7 +186,7 @@
       action = "<C-W>v";
       options = {
         silent = true;
-        desc = "Split Window Right";
+        desc = "Split right";
       };
     }
     {
@@ -199,7 +195,7 @@
       action = "<C-W>h";
       options = {
         silent = true;
-        desc = "Move to Window Left";
+        desc = "Move to left";
       };
     }
     {
@@ -208,7 +204,7 @@
       action = "<C-W>l";
       options = {
         silent = true;
-        desc = "Move to Window Right";
+        desc = "Move to right";
       };
     }
     {
@@ -217,7 +213,7 @@
       action = "<C-W>k";
       options = {
         silent = true;
-        desc = "Move to Window Over";
+        desc = "Move to above";
       };
     }
     {
@@ -226,7 +222,7 @@
       action = "<C-W>j";
       options = {
         silent = true;
-        desc = "Move to Window Bellow";
+        desc = "Move to below";
       };
     }
     {
@@ -234,7 +230,7 @@
       key = "<C-Up>";
       action = "<cmd>resize +2<cr>";
       options = {
-        desc = "Increase Window Height";
+        desc = "Expand height";
       };
     }
     {
@@ -242,7 +238,7 @@
       key = "<C-Down>";
       action = "<cmd>resize -2<cr>";
       options = {
-        desc = "Decrease Window Height";
+        desc = "Shrink height";
       };
     }
     {
@@ -250,7 +246,7 @@
       key = "<C-Left>";
       action = "<cmd>vertical resize -2<cr>";
       options = {
-        desc = "Decrease Window Width";
+        desc = "Expand width";
       };
     }
     {
@@ -258,7 +254,7 @@
       key = "<C-Right>";
       action = "<cmd>vertical resize +2<cr>";
       options = {
-        desc = "Increase Window Width";
+        desc = "Shrink width";
       };
     }
     {
@@ -267,7 +263,7 @@
       action = "<cmd>w<cr><esc>";
       options = {
         silent = true;
-        desc = "Save File";
+        desc = "Save file";
       };
     }
     # Windows ends
@@ -279,7 +275,7 @@
       action = "<cmd>quitall<cr><esc>";
       options = {
         silent = true;
-        desc = "Quit All";
+        desc = "Quit all";
       };
     }
     # Quit/Session ends
@@ -291,7 +287,7 @@
       action = ":lua ToggleLineNumber()<cr>";
       options = {
         silent = true;
-        desc = "Toggle Line Numbers";
+        desc = "Toggle line number";
       };
     }
     {
@@ -300,7 +296,7 @@
       action = ":lua ToggleRelativeLineNumber()<cr>";
       options = {
         silent = true;
-        desc = "Toggle Relative Line Numbers";
+        desc = "Toggle relative line number";
       };
     }
     {
@@ -309,7 +305,7 @@
       action = ":lua ToggleWrap()<cr>";
       options = {
         silent = true;
-        desc = "Toggle Line Wrap";
+        desc = "Toggle line wrap";
       };
     }
     {
@@ -318,7 +314,7 @@
       action = "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>";
       options = {
         silent = true;
-        desc = "Redraw/Clear hlsearch/Diff Update";
+        desc = "Redraw/Clear hlsearch/Diff update";
       };
     }
     # UI ends
@@ -328,25 +324,33 @@
       mode = "n";
       key = "<A-j>";
       action = "<cmd>m .+1<cr>==";
-      options = {desc = "Move Down";};
+      options = {
+        desc = "Move line down";
+      };
     }
     {
       mode = "n";
       key = "<A-k>";
       action = "<cmd>m .-2<cr>==";
-      options = {desc = "Move Up";};
+      options = {
+        desc = "Move line up";
+      };
     }
     {
       mode = "i";
       key = "<A-j>";
       action = "<esc><cmd>m .+1<cr>==gi";
-      options = {desc = "Move Down";};
+      options = {
+        desc = "Move line down";
+      };
     }
     {
       mode = "i";
       key = "<A-k>";
       action = "<esc><cmd>m .-2<cr>==gi";
-      options = {desc = "Move Up";};
+      options = {
+        desc = "Move line up";
+      };
     }
     {
       mode = "v";
@@ -354,7 +358,7 @@
       action = ":m '>+1<cr>gv=gv";
       options = {
         silent = true;
-        desc = "Move Down";
+        desc = "Move line down";
       };
     }
     {
@@ -363,7 +367,7 @@
       action = ":m '<-2<cr>gv=gv";
       options = {
         silent = true;
-        desc = "Move Up";
+        desc = "Move line up";
       };
     }
     {
@@ -384,7 +388,7 @@
       action = "'Nn'[v:searchforward].'zv'";
       options = {
         expr = true;
-        desc = "Next Search Result";
+        desc = "Next search result";
       };
     }
     {
@@ -393,7 +397,7 @@
       action = "'Nn'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Next Search Result";
+        desc = "Next search result";
       };
     }
     {
@@ -402,7 +406,7 @@
       action = "'Nn'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Next Search Result";
+        desc = "Next search result";
       };
     }
     {
@@ -411,7 +415,7 @@
       action = "'nN'[v:searchforward].'zv'";
       options = {
         expr = true;
-        desc = "Previous Search Result";
+        desc = "Previous search result";
       };
     }
     {
@@ -420,7 +424,7 @@
       action = "'nN'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Previous Search Result";
+        desc = "Previous search result";
       };
     }
     {
@@ -429,7 +433,7 @@
       action = "'nN'[v:searchforward]";
       options = {
         expr = true;
-        desc = "Previous Search Result";
+        desc = "Previous search result";
       };
     }
     # better indenting
@@ -443,19 +447,24 @@
       key = ">";
       action = ">gv";
     }
+    # General ends
 
     # Quickfix
     {
       mode = "n";
       key = "<leader>xl";
       action = "<cmd>lopen<cr>";
-      options = {desc = "Location List";};
+      options = {
+        desc = "Location list";
+      };
     }
     {
       mode = "n";
       key = "<leader>xq";
       action = "<cmd>copen<cr>";
-      options = {desc = "Quickfix List";};
+      options = {
+        desc = "Quickfix list";
+      };
     }
     {
       mode = "n";
@@ -463,7 +472,7 @@
       action = ":<C-u>silent! cprev<cr>";
       options = {
         silent = true;
-        desc = "Previous Quickfix";
+        desc = "Previous quickfix";
       };
     }
     {
@@ -472,136 +481,31 @@
       action = ":<C-u>silent! cnext<cr>";
       options = {
         silent = true;
-        desc = "Next Quickfix";
+        desc = "Next quickfix";
       };
+    }
+    # Quickfix ends
+
+    {
+      mode = ["n" "v"];
+      key = "<leader>Y";
+      action = ''"+y'';
+      options = {desc = "Copy (system clipboard)";};
     }
 
-    # Diagnostics
     {
-      mode = "n";
-      key = "<leader>cd";
-      action = ":lua vim.diagnostic.open_float()<cr>";
-      options = {
-        silent = true;
-        desc = "Line Diagnostics";
-      };
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action = ":lua vim.diagnostic.goto_next()<cr>";
-      options = {
-        silent = true;
-        desc = "Next Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "[d";
-      action = ":lua vim.diagnostic.goto_prev()<cr>";
-      options = {
-        silent = true;
-        desc = "Previous Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "]e";
-      action = ":lua vim.diagnostic.goto_next({severity=vim.diagnostic.severity.ERROR})<cr>";
-      options = {
-        silent = true;
-        desc = "Next Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "[e";
-      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.ERROR})<cr>";
-      options = {
-        silent = true;
-        desc = "Previous Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "]w";
-      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.WARN})<cr>";
-      options = {
-        silent = true;
-        desc = "Next Warning";
-      };
-    }
-    {
-      mode = "n";
-      key = "[w";
-      action = ":lua vim.diagnostic.goto_prev({severity=vim.diagnostic.severity.WARN})<cr>";
-      options = {
-        silent = true;
-        desc = "Previous Warning";
-      };
+      mode = ["n" "v"];
+      key = "<leader>P";
+      action = ''"+p'';
+      options = {desc = "Paste (system clipboard)";};
     }
 
-    # General ends
-
-    # {
-    #   mode = "n";
-    #   key = "<C-d>";
-    #   action = "<C-d>zz";
-    #   options = {
-    #     desc = "Allow C-d and C-u to keep the cursor in the middle";
-    #   };
-    # }
-    #
-    # {
-    #   mode = "n";
-    #   key = "<C-u>";
-    #   action = "<C-u>zz";
-    #   options = {
-    #     desc = "Allow C-d and C-u to keep the cursor in the middle";
-    #   };
-    # }
-    #
-    # {
-    #   mode = "n";
-    #   key = "n";
-    #   action = "nzzzv";
-    #   options = {desc = "Allow search terms to stay in the middle ";};
-    # }
-    #
-    # {
-    #   mode = "n";
-    #   key = "N";
-    #   action = "Nzzzv";
-    #   options = {desc = "Allow search terms to stay in the middle ";};
-    # }
-
-    # {
-    #   mode = "x";
-    #   key = "<leader>p";
-    #   action = ''"_dP'';
-    #   options = {desc = "Deletes to void register and paste over";};
-    # }
-    #
-    # {
-    #   mode = ["n" "v"];
-    #   key = "<leader>y";
-    #   action = ''"+y'';
-    #   options = {desc = "Copy to system clipboard";};
-    # }
-    #
-    # {
-    #   mode = ["n" "v"];
-    #   key = "<leader>Y";
-    #   action = ''"+Y'';
-    #   options = {desc = "Copy to system clipboard";};
-    # }
-    #
-    # {
-    #   mode = ["n" "v"];
-    #   key = "<leader>D";
-    #   action = ''"_d'';
-    #   options = {desc = "Delete to void register";};
-    # }
+    {
+      mode = ["n" "v"];
+      key = "<leader>D";
+      action = ''"_d'';
+      options = {desc = "Delete to void register";};
+    }
   ];
   extraConfigLua = ''
     function ToggleLineNumber()
@@ -624,12 +528,6 @@
 
     function ToggleWrap()
       vim.wo.wrap = not vim.wo.wrap
-    end
-
-    function diagnostic_goto(next, severity)
-      local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-      severity = severity and vim.diagnostic.severity[severity] or nil
-      go({ severity = severity })
     end
   '';
 }

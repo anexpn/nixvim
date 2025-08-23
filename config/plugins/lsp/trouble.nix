@@ -8,7 +8,7 @@
       key = "<leader>xx";
       action = "<cmd>TroubleToggle workspace_diagnostics<cr>";
       options = {
-        desc = "Workspace Diagnostics (Trouble)";
+        desc = "Diagnostics (workspace) (Trouble)";
       };
     }
     {
@@ -16,23 +16,23 @@
       key = "<leader>xX";
       action = "<cmd>TroubleToggle document_diagnostics<cr>";
       options = {
-        desc = "Buffer Diagnostics (Trouble)";
+        desc = "Diagnostics (buffer) (Trouble)";
       };
     }
     {
       mode = "n";
       key = "<leader>xL";
-      action = "<cmd>TroubleToggle loclist";
+      action = "<cmd>TroubleToggle loclist<cr>";
       options = {
-        desc = "Location List (Trouble)";
+        desc = "Location list (Trouble)";
       };
     }
     {
       mode = "n";
       key = "<leader>xQ";
-      action = "<cmd>TroubleToggle qflist";
+      action = "<cmd>TroubleToggle qflist<cr>";
       options = {
-        desc = "Quickfix List (Trouble)";
+        desc = "Quickfix list (Trouble)";
       };
     }
     {
@@ -53,7 +53,7 @@
         '';
       };
       options = {
-        desc = "Previous Trouble/Quickfix Item";
+        desc = "Previous Trouble/Quickfix item";
       };
     }
     {
@@ -74,7 +74,7 @@
         '';
       };
       options = {
-        desc = "Next Trouble/Quickfix Item";
+        desc = "Next Trouble/Quickfix item";
       };
     }
   ];
