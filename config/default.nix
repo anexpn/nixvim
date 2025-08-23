@@ -49,6 +49,8 @@
 
     ./plugins/terminal/toggleterm.nix
 
+    ./plugins/testing/neotest.nix
+
     ./plugins/workflow/hardtime.nix
     ./plugins/workflow/undotree.nix
     ./plugins/workflow/whichkey.nix

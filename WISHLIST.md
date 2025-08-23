@@ -8,7 +8,7 @@
 - **neogit** - Interactive Git interface inspired by Magit with powerful workflow management and customizable UI
 
 ## Testing & Task Management
-- **neotest** - Extensible test framework supporting 25+ test runners (pytest, Jest, RSpec) with debugging integration
+- ~~**neotest**~~ - ✅ **COMPLETED** - Extensible test framework supporting 25+ test runners (pytest, Jest, RSpec) with debugging integration
 - **overseer** - Task runner with built-in support for make/npm/cargo, VS Code tasks, quickfix integration, and nvim-dap compatibility
 
 ## Debugging

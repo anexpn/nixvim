@@ -95,6 +95,23 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "neotest",
+          date = "2025-08-23", 
+          description = "Extensible test framework with Python support",
+          keymaps = {
+            "<leader>tt = Run nearest test",
+            "<leader>tT = Run current test file",
+            "<leader>td = Debug nearest test",
+            "<leader>ts = Stop test",
+            "<leader>tS = Toggle test summary",
+            "<leader>to = Show test output",
+            "<leader>tO = Toggle output panel",
+            "<leader>tl = Run last test",
+            "<leader>tw = Watch current file"
+          },
+          usage = "Use <leader>tt to run tests, <leader>tS for summary panel"
+        },
+        {
           name = "grug-far",
           date = "2025-08-23",
           description = "Powerful find and replace with live preview",
