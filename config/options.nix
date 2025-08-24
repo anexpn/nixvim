@@ -95,6 +95,18 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "snacks.nvim",
+          date = "2025-08-24",
+          description = "Utility plugins for big files, notifications, status column, and word highlighting",
+          keymaps = {
+            ":checkhealth snacks = Check snacks health",
+            "Automatic features: big file handling, enhanced notifications, status column improvements",
+            "Word highlighting under cursor with 100ms debounce",
+            "Quick file operations for better performance"
+          },
+          usage = "Provides utility enhancements alongside existing alpha dashboard. Improves file handling and UI feedback"
+        },
+        {
           name = "neotest",
           date = "2025-08-23", 
           description = "Extensible test framework with Python support",

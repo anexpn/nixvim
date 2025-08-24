@@ -28,6 +28,7 @@
 
     ./plugins/ui/telescope.nix
     ./plugins/ui/web-devicons.nix
+    ./plugins/ui/snacks.nix
     ./plugins/ui/alpha.nix
     ./plugins/ui/indent-blankline.nix
     ./plugins/ui/noice.nix

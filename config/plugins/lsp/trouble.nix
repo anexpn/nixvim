@@ -40,7 +40,7 @@
       key = "<leader>cs";
       action = "<cmd>Trouble symbols toggle focus=false<cr>";
       options = {
-        desc = "Document Symbols";
+        desc = "[LSP] Document Symbols";
       };
     }
     {
@@ -48,7 +48,7 @@
       key = "<leader>cl";
       action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
       options = {
-        desc = "LSP Definitions & References";
+        desc = "[LSP] Definitions & References";
       };
     }
     {
