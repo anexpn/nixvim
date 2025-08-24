@@ -35,10 +35,10 @@
         default = ./config;
       };
 
-      flake.homeManagerModules = {
+      flake.homeModules = {
         default = {
           imports = [
-            inputs.nixvim.homeManagerModules.nixvim
+            inputs.nixvim.homeModules.nixvim
           ];
 
           programs.nixvim = {
