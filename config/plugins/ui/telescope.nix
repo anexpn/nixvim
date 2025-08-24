@@ -88,6 +88,12 @@
           desc = "Search Current Buffer";
         };
       };
+      "<leader>;" = {
+        action = "current_buffer_fuzzy_find";
+        options = {
+          desc = "Search Current Buffer (Alt)";
+        };
+      };
       "<leader>sc" = {
         action = "command_history";
         options = {
@@ -146,6 +152,12 @@
         action = "resume";
         options = {
           desc = "Resume Last Search";
+        };
+      };
+      "<leader>." = {
+        action = "resume";
+        options = {
+          desc = "Resume Last Search (Alt)";
         };
       };
       "<leader>ss" = {

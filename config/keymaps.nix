@@ -421,24 +421,39 @@
     # Quickfix ends
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>Y";
       action = ''"+y'';
-      options = {desc = "Copy to System Clipboard";};
+      options = {
+        desc = "Copy to System Clipboard";
+      };
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>P";
       action = ''"+p'';
-      options = {desc = "Paste from System Clipboard";};
+      options = {
+        desc = "Paste from System Clipboard";
+      };
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>D";
       action = ''"_d'';
-      options = {desc = "Delete to Void Register";};
+      options = {
+        desc = "Delete to Void Register";
+      };
     }
   ];
   extraConfigLua = ''

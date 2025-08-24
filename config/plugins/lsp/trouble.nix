@@ -24,7 +24,7 @@
       key = "<leader>xL";
       action = "<cmd>Trouble loclist toggle<cr>";
       options = {
-        desc = "Location List";
+        desc = "Open Location List (Trouble)";
       };
     }
     {
@@ -32,7 +32,7 @@
       key = "<leader>xQ";
       action = "<cmd>Trouble qflist toggle<cr>";
       options = {
-        desc = "Quickfix List";
+        desc = "Open Quickfix List (Trouble)";
       };
     }
     {
