@@ -95,6 +95,17 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "smart-splits.nvim",
+          date = "2025-08-24",
+          description = "Smart, seamless navigation and resizing of Neovim + tmux splits",
+          keymaps = {
+            "<C-h/j/k/l> = Navigate splits (works with tmux)",
+            "<A-h/j/k/l> = Resize splits",
+            "<leader><leader>h/j/k/l = Swap buffers between splits"
+          },
+          usage = "Seamless navigation between Neovim and tmux panes. Configure tmux with provided config for full integration"
+        },
+        {
           name = "snacks.nvim",
           date = "2025-08-24",
           description = "Utility plugins for big files, notifications, status column, and word highlighting",

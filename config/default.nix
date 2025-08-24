@@ -39,6 +39,7 @@
 
     ./plugins/navigation/flash.nix
     ./plugins/navigation/harpoon.nix
+    ./plugins/navigation/smart-splits.nix
 
     ./plugins/editing/comment.nix
     ./plugins/editing/nvim-autopairs.nix

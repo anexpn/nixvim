@@ -116,7 +116,7 @@
     }
     {
       mode = "n";
-      key = "<leader>w-";
+      key = "<leader>w\"";
       action = "<C-W>s";
       options = {
         silent = true;
@@ -125,47 +125,11 @@
     }
     {
       mode = "n";
-      key = "<leader>w|";
+      key = "<leader>w%";
       action = "<C-W>v";
       options = {
         silent = true;
         desc = "Split Window Right";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-h>";
-      action = "<C-W>h";
-      options = {
-        silent = true;
-        desc = "Move to Left Window";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-l>";
-      action = "<C-W>l";
-      options = {
-        silent = true;
-        desc = "Move to Right Window";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<C-W>k";
-      options = {
-        silent = true;
-        desc = "Move to Upper Window";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-j>";
-      action = "<C-W>j";
-      options = {
-        silent = true;
-        desc = "Move to Lower Window";
       };
     }
     {
@@ -253,57 +217,6 @@
     }
     # UI ends
 
-    # Move Lines
-    {
-      mode = "n";
-      key = "<A-j>";
-      action = "<cmd>m .+1<cr>==";
-      options = {
-        desc = "Move Line Down";
-      };
-    }
-    {
-      mode = "n";
-      key = "<A-k>";
-      action = "<cmd>m .-2<cr>==";
-      options = {
-        desc = "Move Line Up";
-      };
-    }
-    {
-      mode = "i";
-      key = "<A-j>";
-      action = "<esc><cmd>m .+1<cr>==gi";
-      options = {
-        desc = "Move Line Down";
-      };
-    }
-    {
-      mode = "i";
-      key = "<A-k>";
-      action = "<esc><cmd>m .-2<cr>==gi";
-      options = {
-        desc = "Move Line Up";
-      };
-    }
-    {
-      mode = "v";
-      key = "<A-j>";
-      action = ":m '>+1<cr>gv=gv";
-      options = {
-        silent = true;
-        desc = "Move Line Down";
-      };
-    }
-    {
-      mode = "v";
-      key = "<A-k>";
-      action = ":m '<-2<cr>gv=gv";
-      options = {
-        silent = true;
-        desc = "Move Line Up";
-      };
-    }
     {
       mode = "n";
       key = "J";
@@ -312,7 +225,6 @@
         desc = "Join Lines (Keep Cursor Position)";
       };
     }
-    # Move Lines ends
 
     # General
     # https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n
