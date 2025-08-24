@@ -16,13 +16,13 @@
 - **nvim-dap-ui** - Rich debugging UI with variable scopes, threads, stack frames, watch expressions, and REPL
 
 ## Terminal & Multiplexer Integration
-- **smart-splits** - Intelligent split navigation between Neovim and terminal multiplexers (tmux/Wezterm/Kitty/Zellij)
+- ~~**smart-splits**~~ - ✅ **COMPLETED** - Intelligent split navigation between Neovim and terminal multiplexers (tmux/Wezterm/Kitty/Zellij)
 - **tmux.nvim** - Seamless tmux integration with copy sync, navigation, resizing, and pane swapping
 - **wezterm.nvim** - Wezterm terminal utilities for spawning tasks, switching tabs/panes from within Neovim
 
 ## Productivity & Workflow
 - **commander.nvim** - Command palette for organizing keybindings with Telescope integration and categorization
-- **zen-mode.nvim** - Distraction-free coding with full-screen floating windows and backdrop shading
+- ~~**zen-mode.nvim**~~ - ✅ **COMPLETED** - Distraction-free coding with full-screen floating windows and backdrop shading
 - **persistence.nvim** - Simple session management with automatic saving and directory-based restoration
 
 ## Text Manipulation
@@ -44,4 +44,4 @@
 - **profile.nvim** - Lua profiler for Neovim with Chrome tracing export and targeted profiling capabilities
 
 ## Modern UI Suite
-- **snacks.nvim** - Comprehensive plugin collection with file explorer, pickers, zen mode, smooth scrolling, LSP integration, and dashboard
+- ~~**snacks.nvim**~~ - ✅ **COMPLETED** - Comprehensive plugin collection with file explorer, pickers, zen mode, smooth scrolling, LSP integration, and dashboard

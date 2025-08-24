@@ -95,6 +95,16 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "zen-mode.nvim",
+          date = "2025-08-24", 
+          description = "Distraction-free coding with full-screen floating windows and backdrop shading",
+          keymaps = {
+            "<leader>uz = Toggle zen mode",
+            ":ZenMode = Toggle zen mode command"
+          },
+          usage = "Enter focused coding mode with clean UI, hidden distractions, and centered content window"
+        },
+        {
           name = "smart-splits.nvim",
           date = "2025-08-24",
           description = "Smart, seamless navigation and resizing of Neovim + tmux splits",

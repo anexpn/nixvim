@@ -186,6 +186,14 @@
             color = "red";
           };
         }
+        {
+          "__unkeyed-1" = "<leader>uz";
+          desc = "Toggle Zen Mode";
+          icon = {
+            icon = "󰚀";
+            color = "purple";
+          };
+        }
       ];
     };
   };

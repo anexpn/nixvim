@@ -70,4 +70,14 @@ Plugins are organized by category in `config/plugins/`:
    - Description of functionality
    - Key mappings and usage instructions
 2. Update `WISHLIST.md` to mark the plugin as completed
-3. The `:RecentPlugins` command shows users the latest plugin additions and how to use them
+3. **KEYMAP CONSISTENCY**: Always check `config/plugins/workflow/whichkey.nix` and follow existing keymap groups:
+   - `<leader>f` = File operations
+   - `<leader>s` = Search operations  
+   - `<leader>g` = Git operations
+   - `<leader>c` = Code operations
+   - `<leader>u` = UI operations
+   - `<leader>w` = Window operations
+   - `<leader>b` = Buffer operations
+   - `<leader>t` = Test operations
+   - Add new keymaps to the appropriate whichkey spec with proper icon and color
+4. The `:RecentPlugins` command shows users the latest plugin additions and how to use them
