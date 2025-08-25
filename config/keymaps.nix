@@ -1,5 +1,6 @@
 {
   globals.mapleader = " ";
+  globals.maplocalleader = ",";
 
   keymaps = [
     # Which-key group definitions are now handled in whichkey.nix

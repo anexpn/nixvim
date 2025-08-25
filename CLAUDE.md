@@ -32,13 +32,19 @@ This is a NixVim configuration written in Nix that creates a complete Neovim set
 ### Plugin Structure
 Plugins are organized by category in `config/plugins/`:
 - `completion/`: blink-cmp (modern completion engine)
+- `editing/`: Text editing enhancements (comment, nvim-autopairs, nvim-surround)
+- `files/`: File management (oil file explorer)
 - `git/`: Git integration (gitsigns, lazygit, worktree)
 - `lsp/`: Language server setup (conform, fidget, hlchunk, lsp, lspsaga, none-ls, trouble)
+- `navigation/`: Movement and navigation (flash, harpoon, smart-splits)
+- `search/`: Search and replace (grug-far)
 - `snippets/`: LuaSnip configuration
 - `statusline/`: Status line plugins (lualine)
+- `terminal/`: Terminal integration (toggleterm)
+- `testing/`: Test framework (neotest)
 - `treesitter/`: Treesitter, treesitter-textobjects, treesitter-context
-- `ui/`: UI enhancements (telescope, web-devicons, alpha, indent-blankline, noice, nvim-notify, bufferline)
-- `utils/`: Utility plugins (comment, flash, hardtime, harpoon, illuminate, nvim-autopairs, oil, toggleterm, ufo, undotree, whichkey)
+- `ui/`: UI enhancements (telescope, web-devicons, alpha, indent-blankline, noice, nvim-notify, bufferline, snacks, ufo, zen-mode)
+- `workflow/`: Workflow and productivity (hardtime, undotree, whichkey)
 - `langs/`: Language-specific plugins (Haskell telescope_hoogle)
 
 ### Theme System
@@ -61,6 +67,7 @@ Plugins are organized by category in `config/plugins/`:
 - Uses alejandra for Nix code formatting
 - Recent migration from nvim-cmp to blink-cmp for improved completion performance
 - Supports both standalone usage and home-manager integration via flake modules
+- Recent additions include smart-splits for seamless split navigation, zen-mode for distraction-free coding, nvim-surround for delimiter manipulation, neotest for test framework integration, grug-far for advanced search/replace, and snacks.nvim for comprehensive UI enhancements
 
 ## Plugin Management Reminders
 

@@ -74,6 +74,7 @@
         "checkhealth"
         "neotest-summary"
         "neotest-output-panel"
+        "grug-far"
       ];
 
       callback = {
