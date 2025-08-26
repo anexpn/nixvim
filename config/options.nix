@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "yazi.nvim",
+          date = "2025-08-26",
+          description = "Terminal file manager with image preview and modern UI",
+          keymaps = {
+            "<leader>- = Open yazi file manager"
+          },
+          usage = "Fast, intuitive file management with image previews. Use to select directories and open grep. Requires yazi installed on system"
+        },
+        {
           name = "neo-tree.nvim",
           date = "2025-08-26",
           description = "Traditional file tree explorer with Git integration and LSP diagnostics",

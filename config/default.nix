@@ -50,6 +50,7 @@
 
     ./plugins/files/oil.nix
     ./plugins/files/neo-tree.nix
+    ./plugins/files/yazi.nix
 
     ./plugins/terminal/toggleterm.nix
 

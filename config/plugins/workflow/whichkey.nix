@@ -4,24 +4,27 @@
     settings = {
       preset = "classic";
       delay = 200;
-      
+
       # Window configuration
       win = {
         no_overlap = true;
-        padding = [ 1 2 ];
+        padding = [1 2];
         title = true;
         title_pos = "center";
         zindex = 1000;
         border = "rounded";
       };
-      
+
       # Layout configuration
       layout = {
-        width = { min = 20; max = 50; };
+        width = {
+          min = 20;
+          max = 50;
+        };
         spacing = 3;
         align = "left";
       };
-      
+
       # Icon configuration
       icons = {
         mappings = true;
@@ -29,7 +32,7 @@
         separator = "➜";
         group = "+";
         ellipsis = "…";
-        
+
         # Custom key representations
         keys = {
           Up = " ";
@@ -62,7 +65,7 @@
           F12 = "󱊶";
         };
       };
-      
+
       # Key specification with proper intuitive Nerd Font icons
       spec = [
         {
@@ -192,6 +195,14 @@
           icon = {
             icon = "󰚀";
             color = "purple";
+          };
+        }
+        {
+          "__unkeyed-1" = "<leader>-";
+          desc = "Open yazi file manager";
+          icon = {
+            icon = "󰇥";
+            color = "blue";
           };
         }
       ];
