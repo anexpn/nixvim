@@ -49,6 +49,7 @@
     ./plugins/search/grug-far.nix
 
     ./plugins/files/oil.nix
+    ./plugins/files/neo-tree.nix
 
     ./plugins/terminal/toggleterm.nix
 

@@ -31,6 +31,7 @@
 - ~~**nvim-surround**~~ - ✅ **COMPLETED** - Add/delete/change surrounding delimiter pairs with dot-repeat support and Tree-sitter integration
 
 ## File Management
+- ~~**neo-tree.nvim**~~ - ✅ **COMPLETED** - Modern file explorer with tree view, buffer/git/symbol sources, fuzzy search, and floating windows
 - **yazi.nvim** - Modern terminal file manager integration with floating window, split highlighting, and plugin support
 
 ## Refactoring & Code Quality

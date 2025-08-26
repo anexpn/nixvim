@@ -95,6 +95,16 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "neo-tree.nvim",
+          date = "2025-08-26",
+          description = "Traditional file tree explorer with Git integration and LSP diagnostics",
+          keymaps = {
+            "<leader>ft = Toggle Neo-tree",
+            "<leader>fo = Focus Neo-tree"
+          },
+          usage = "Sidebar file tree to complement Oil buffer-based explorer. Use <leader>ft to toggle visibility"
+        },
+        {
           name = "zen-mode.nvim",
           date = "2025-08-24", 
           description = "Distraction-free coding with full-screen floating windows and backdrop shading",
