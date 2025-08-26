@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "neogit",
+          date = "2025-08-26",
+          description = "Magit-inspired Git interface for Neovim",
+          keymaps = {
+            "<leader>gn = Open Neogit"
+          },
+          usage = "Powerful Git interface with status, staging, committing, and branching. Alternative to lazygit with more Emacs Magit-like workflow"
+        },
+        {
           name = "yazi.nvim",
           date = "2025-08-26",
           description = "Terminal file manager with image preview and modern UI",

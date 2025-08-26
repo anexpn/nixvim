@@ -8,6 +8,7 @@
 
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
+    ./plugins/git/neogit.nix
     ./plugins/git/worktree.nix
 
     ./plugins/lsp/lsp.nix

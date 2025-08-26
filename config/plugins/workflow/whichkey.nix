@@ -198,6 +198,14 @@
           };
         }
         {
+          "__unkeyed-1" = "<leader>gn";
+          desc = "Neogit";
+          icon = {
+            icon = "󰊢";
+            color = "orange";
+          };
+        }
+        {
           "__unkeyed-1" = "<leader>-";
           desc = "Open yazi file manager";
           icon = {
