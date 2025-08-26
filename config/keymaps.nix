@@ -94,6 +94,14 @@
         desc = "Next Buffer";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>bo";
+      action = "<cmd>%bd|e#|bd#<cr>";
+      options = {
+        desc = "Close Other Buffers";
+      };
+    }
     # Buffers ends
 
     # Windows
@@ -163,6 +171,15 @@
       action = "<cmd>vertical resize +2<cr>";
       options = {
         desc = "Expand Window Width";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>wo";
+      action = "<cmd>only<cr>";
+      options = {
+        silent = true;
+        desc = "Close Other Windows";
       };
     }
     # Windows ends
