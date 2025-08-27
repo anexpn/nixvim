@@ -1,6 +1,11 @@
 {
   plugins.neogit = {
     enable = true;
+    settings = {
+      integrations = {
+        diffview = true;
+      };
+    };
   };
 
   keymaps = [

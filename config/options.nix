@@ -95,6 +95,17 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "diffview.nvim",
+          date = "2025-08-27",
+          description = "Single tabpage interface for cycling through diffs and file history",
+          keymaps = {
+            "<leader>gv = Open Diffview",
+            "<leader>gh = File History",
+            "<leader>gq = Close Diffview"
+          },
+          usage = "Specialized diff viewer with merge conflict resolution, PR review, and commit history navigation. Integrates with neogit for enhanced Git workflow"
+        },
+        {
           name = "neogit",
           date = "2025-08-26",
           description = "Magit-inspired Git interface for Neovim",

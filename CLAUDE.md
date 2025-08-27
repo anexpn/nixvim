@@ -89,3 +89,5 @@ Plugins are organized by category in `config/plugins/`:
    - Add new keymaps to the appropriate whichkey spec with proper icon and color
 4. The `:RecentPlugins` command shows users the latest plugin additions and how to use them
 - When adding new plugin, start simple, evolve when neccessary. But always include some essential defaults.
+- remember to add new nix file to default.nix
+- Always start new plugin config simple, add incrementally.

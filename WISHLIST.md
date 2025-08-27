@@ -4,8 +4,8 @@
 - ~~**grug-far**~~ - ✅ **COMPLETED** - Powerful find and replace with ripgrep/ast-grep support, live preview, multiline search, and script-based replacement
 
 ## Git Integration
-- **diffview** - Single tabpage interface for cycling through diffs, merge conflict resolution, file history tracking
-- **neogit** - Interactive Git interface inspired by Magit with powerful workflow management and customizable UI
+- ~~**diffview**~~ - ✅ **COMPLETED** - Single tabpage interface for cycling through diffs, merge conflict resolution, file history tracking
+- ~~**neogit**~~ - ✅ **COMPLETED** - Interactive Git interface inspired by Magit with powerful workflow management and customizable UI
 
 ## Testing & Task Management
 - ~~**neotest**~~ - ✅ **COMPLETED** - Extensible test framework supporting 25+ test runners (pytest, Jest, RSpec) with debugging integration
@@ -32,7 +32,7 @@
 
 ## File Management
 - ~~**neo-tree.nvim**~~ - ✅ **COMPLETED** - Modern file explorer with tree view, buffer/git/symbol sources, fuzzy search, and floating windows
-- **yazi.nvim** - Modern terminal file manager integration with floating window, split highlighting, and plugin support
+- ~~**yazi.nvim**~~ - ✅ **COMPLETED** - Modern terminal file manager integration with floating window, split highlighting, and plugin support
 
 ## Refactoring & Code Quality
 - **refactoring.nvim** - Automated refactoring based on Martin Fowler's book (extract function/variable, inline, debug prints)
