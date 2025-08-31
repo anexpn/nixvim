@@ -91,3 +91,4 @@ Plugins are organized by category in `config/plugins/`:
 - When adding new plugin, start simple, evolve when neccessary. But always include some essential defaults.
 - remember to add new nix file to default.nix
 - Always start new plugin config simple, add incrementally.
+- When adding plugins, start with default config with no settings.

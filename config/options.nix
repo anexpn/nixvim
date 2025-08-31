@@ -95,12 +95,26 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "claudecode.nvim",
+          date = "2025-08-31",
+          description = "Claude Code integration with native Neovim diff support",
+          keymaps = {
+            "<leader>ao = Toggle Claude Code",
+            "<leader>af = Focus Claude Code",
+            "<leader>as = Send selection to Claude (visual)",
+            "<leader>ab = Add current buffer",
+            "<leader>aa = Accept Claude diff",
+            "<leader>ad = Deny Claude diff"
+          },
+          usage = "Pure Lua implementation of Claude Code with WebSocket protocol. Requires Claude Code CLI installed"
+        },
+        {
           name = "codecompanion.nvim",
           date = "2025-08-31",
           description = "AI coding assistant with chat and inline code generation",
           keymaps = {
             "<leader>ac = CodeCompanion Chat",
-            "<leader>aa = CodeCompanion Actions",
+            "<leader>ax = CodeCompanion Actions",
             "<leader>ai = CodeCompanion Inline"
           },
           usage = "AI assistant for code generation, chat, and inline editing. Use :CodeCompanion <prompt> for inline assistance or chat interface"

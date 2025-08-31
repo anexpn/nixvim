@@ -65,6 +65,7 @@
     ./plugins/langs/haskell/telescope_hoogle.nix
 
     ./plugins/ai/codecompanion.nix
+    ./plugins/ai/claudecode.nix
 
     # Overrided by the above
     ./keymaps.nix

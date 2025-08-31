@@ -15,7 +15,7 @@
     }
     {
       mode = ["n" "v"];
-      key = "<leader>aa";
+      key = "<leader>ax";
       action = "<cmd>CodeCompanionActions<cr>";
       options = {
         desc = "CodeCompanion Actions";
