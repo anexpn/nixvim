@@ -156,6 +156,14 @@
             color = "green";
           };
         }
+        {
+          "__unkeyed-1" = "<leader>a";
+          group = "AI";
+          icon = {
+            icon = "󰧑";
+            color = "purple";
+          };
+        }
         # Individual keymap icons
         {
           "__unkeyed-1" = "<leader>j";

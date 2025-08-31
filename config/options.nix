@@ -95,6 +95,17 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "codecompanion.nvim",
+          date = "2025-08-31",
+          description = "AI coding assistant with chat and inline code generation",
+          keymaps = {
+            "<leader>ac = CodeCompanion Chat",
+            "<leader>aa = CodeCompanion Actions",
+            "<leader>ai = CodeCompanion Inline"
+          },
+          usage = "AI assistant for code generation, chat, and inline editing. Use :CodeCompanion <prompt> for inline assistance or chat interface"
+        },
+        {
           name = "diffview.nvim",
           date = "2025-08-27",
           description = "Single tabpage interface for cycling through diffs and file history",
