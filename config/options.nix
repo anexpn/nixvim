@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "project.nvim",
+          date = "2025-08-31",
+          description = "Project management with automatic root detection and session management",
+          keymaps = {
+            "<leader>fp = Find Projects"
+          },
+          usage = "Automatically detects project root and manages project sessions. Integrates with Telescope for project switching"
+        },
+        {
           name = "claudecode.nvim",
           date = "2025-08-31",
           description = "Claude Code integration with native Neovim diff support",

@@ -49,3 +49,7 @@
 
 ## AI Assistance
 - ~~**codecompanion.nvim**~~ - ✅ **COMPLETED** - AI coding assistant with chat interface and inline code generation for enhanced development workflow
+
+## Project Management
+- ~~**project.nvim**~~ - ✅ **COMPLETED** - Project management with automatic root detection, session management, and Telescope integration
+- **marks.nvim** - Enhanced mark management with visual indicators, bookmarks, and navigation improvements

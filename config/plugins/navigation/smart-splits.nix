@@ -78,7 +78,7 @@
 
     # Window resizing
     {
-      mode = "n";
+      mode = ["n" "t"];
       key = "<A-h>";
       action.__raw = "require('smart-splits').resize_left";
       options = {
@@ -87,7 +87,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "t"];
       key = "<A-j>";
       action.__raw = "require('smart-splits').resize_down";
       options = {
@@ -96,7 +96,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "t"];
       key = "<A-k>";
       action.__raw = "require('smart-splits').resize_up";
       options = {
@@ -105,7 +105,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "t"];
       key = "<A-l>";
       action.__raw = "require('smart-splits').resize_right";
       options = {

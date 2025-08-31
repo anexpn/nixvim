@@ -61,6 +61,7 @@
     ./plugins/workflow/hardtime.nix
     ./plugins/workflow/undotree.nix
     ./plugins/workflow/whichkey.nix
+    ./plugins/workflow/project.nix
 
     ./plugins/langs/haskell/telescope_hoogle.nix
 
