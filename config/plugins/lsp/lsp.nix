@@ -25,6 +25,9 @@
         clangd = {
           enable = true;
         };
+        jsonls = {
+          enable = true;
+        };
       };
     };
   };

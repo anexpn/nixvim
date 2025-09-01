@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "jsonls (JSON LSP)",
+          date = "2025-09-01",
+          description = "JSON Language Server for syntax validation, formatting, and schema support",
+          keymaps = {
+            "Uses standard LSP keymaps from <leader>c group"
+          },
+          usage = "Provides JSON validation, formatting, hover information, and JSON schema support for .json files"
+        },
+        {
           name = "project.nvim",
           date = "2025-08-31",
           description = "Project management with automatic root detection and session management",
