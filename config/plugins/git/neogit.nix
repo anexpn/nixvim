@@ -1,6 +1,11 @@
 {
   plugins.neogit = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = "Neogit";
+      };
+    };
     settings = {
       integrations = {
         diffview = true;
@@ -19,3 +24,4 @@
     }
   ];
 }
+

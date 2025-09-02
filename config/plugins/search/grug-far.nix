@@ -1,5 +1,15 @@
 {
-  plugins.grug-far.enable = true;
+  plugins.grug-far = {
+    enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = "GrugFar";
+        keys = [
+          "<leader>sr"
+        ];
+      };
+    };
+  };
 
   keymaps = [
     {
@@ -13,3 +23,4 @@
     }
   ];
 }
+

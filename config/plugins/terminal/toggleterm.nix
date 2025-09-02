@@ -1,6 +1,14 @@
 {
   plugins.toggleterm = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = "ToggleTerm";
+        keys = [
+          "<C-\\>"
+        ];
+      };
+    };
     settings = {
       open_mapping = ''[[<c-\>]]'';
       size = ''

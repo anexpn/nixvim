@@ -1,6 +1,14 @@
 {
   plugins.yazi = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = "Yazi";
+        keys = [
+          "<leader>-"
+        ];
+      };
+    };
   };
   keymaps = [
     {
@@ -14,4 +22,3 @@
     }
   ];
 }
-

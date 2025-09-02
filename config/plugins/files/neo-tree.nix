@@ -5,11 +5,11 @@
     enableDiagnostics = true;
     enableGitStatus = true;
     enableRefreshOnWrite = true;
-    
+
     window = {
       width = 30;
     };
-    
+
     filesystem = {
       followCurrentFile = {
         enabled = true;
@@ -17,7 +17,7 @@
       useLibuvFileWatcher = true;
     };
   };
-  
+
   keymaps = [
     {
       mode = "n";

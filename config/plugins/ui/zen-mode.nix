@@ -1,6 +1,11 @@
 {
   plugins.zen-mode = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = "ZenMode";
+      };
+    };
     settings = {
       window = {
         backdrop = 0.95;
@@ -23,14 +28,14 @@
           showcmd = false;
           laststatus = 0;
         };
-        twilight = { enabled = true; };
-        gitsigns = { enabled = false; };
-        tmux = { enabled = false; };
-        todo-comments = { enabled = false; };
+        twilight = {enabled = true;};
+        gitsigns = {enabled = false;};
+        tmux = {enabled = false;};
+        todo-comments = {enabled = false;};
       };
     };
   };
-  
+
   keymaps = [
     {
       mode = "n";
@@ -43,3 +48,4 @@
     }
   ];
 }
+

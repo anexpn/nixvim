@@ -1,6 +1,15 @@
 {
   plugins.codecompanion = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        cmd = [
+          "CodeCompanion"
+          "CodeCompanionChat"
+          "CodeCompanionActions"
+        ];
+      };
+    };
   };
 
   keymaps = [
@@ -33,3 +42,4 @@
     }
   ];
 }
+

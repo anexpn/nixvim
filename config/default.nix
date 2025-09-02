@@ -68,6 +68,8 @@
     ./plugins/ai/codecompanion.nix
     ./plugins/ai/claudecode.nix
 
+    ./plugins/lazyload/lz-n.nix
+
     # Overrided by the above
     ./keymaps.nix
   ];

@@ -40,6 +40,7 @@
 ## Visual Enhancements
 - **satellite.nvim** - Decorated scrollbar with marks, diagnostics, git hunks, search results, and mouse interaction
 - **yanky.nvim** - Enhanced yank/put with history picker, highlight on yank/put, and special put operations
+- **render-markdown.nvim** - Enhanced markdown rendering with headings, code blocks, tables, and callouts in Neovim buffers
 
 ## Performance & Development
 - **profile.nvim** - Lua profiler for Neovim with Chrome tracing export and targeted profiling capabilities

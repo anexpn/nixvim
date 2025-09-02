@@ -2,6 +2,7 @@
   colorschemes = {
     catppuccin = {
       enable = true;
+      lazyLoad.enable = true;
       settings = {
         background = {
           light = "macchiato";
