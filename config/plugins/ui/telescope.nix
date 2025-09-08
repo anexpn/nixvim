@@ -40,6 +40,12 @@
           desc = "Search in Files (Workspace)";
         };
       };
+      "<leader>sw" = {
+        action = "grep_string";
+        options = {
+          desc = "Search Word (Workspace)";
+        };
+      };
       "<leader>fR" = {
         action = "resume";
         options = {
