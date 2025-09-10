@@ -1,21 +1,6 @@
 {
   plugins.trouble = {
     enable = true;
-    lazyLoad = {
-      settings = {
-        cmd = "Trouble";
-        keys = [
-          "<leader>xx"
-          "<leader>xX"
-          "<leader>xL"
-          "<leader>xQ"
-          "<leader>cs"
-          "<leader>cl"
-          "[q"
-          "]q"
-        ];
-      };
-    };
   };
   keymaps = [
     {
