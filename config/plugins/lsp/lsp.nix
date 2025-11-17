@@ -28,6 +28,9 @@
         jsonls = {
           enable = true;
         };
+        zls = {
+          enable = true;
+        };
       };
     };
   };
