@@ -27,6 +27,7 @@
     ./plugins/treesitter/treesitter.nix
     ./plugins/treesitter/treesitter-textobjects.nix
     ./plugins/treesitter/treesitter-context.nix
+    ./plugins/treesitter/treesitter-endwise.nix
 
     ./plugins/ui/telescope.nix
     ./plugins/ui/web-devicons.nix

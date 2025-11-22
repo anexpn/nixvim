@@ -31,6 +31,9 @@
         zls = {
           enable = true;
         };
+        elixirls = {
+          enable = true;
+        };
       };
     };
   };
