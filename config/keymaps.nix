@@ -233,6 +233,15 @@
         desc = "Redraw Screen & Clear Highlights";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>uf";
+      action = ":lua ToggleAutoFormat()<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle Auto Format";
+      };
+    }
     # UI ends
 
     {
@@ -407,6 +416,14 @@
 
     function ToggleWrap()
       vim.wo.wrap = not vim.wo.wrap
+    end
+
+    function ToggleAutoFormat()
+      if vim.g.disable_autoformat then
+        vim.g.disable_autoformat = false
+      else
+        vim.g.disable_autoformat = true
+      end
     end
   '';
 }
