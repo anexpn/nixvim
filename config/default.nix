@@ -11,6 +11,7 @@
     ./plugins/git/neogit.nix
     ./plugins/git/diffview.nix
     ./plugins/git/worktree.nix
+    ./plugins/git/hunk.nix
 
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/conform.nix
