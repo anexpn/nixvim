@@ -39,10 +39,10 @@
     {
       mode = "n";
       key = "<leader>gd";
-      action = ":Gitsigns diffthis<CR>";
+      action = ":Gitsigns preview_hunk<CR>";
       options = {
         silent = true;
-        desc = "Show Git Diff";
+        desc = "Preview Hunk";
       };
     }
     {
@@ -61,6 +61,24 @@
       options = {
         silent = true;
         desc = "Stage Buffer Changes";
+      };
+    }
+    {
+      mode = "n";
+      key = "]h";
+      action = ":Gitsigns next_hunk<CR>";
+      options = {
+        silent = true;
+        desc = "Next Hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "[h";
+      action = ":Gitsigns prev_hunk<CR>";
+      options = {
+        silent = true;
+        desc = "Previous Hunk";
       };
     }
   ];

@@ -229,6 +229,14 @@
             color = "red";
           };
         }
+        {
+          "__unkeyed-1" = "<leader>z";
+          desc = "Save File";
+          icon = {
+            icon = "󰆓";
+            color = "green";
+          };
+        }
       ];
     };
   };

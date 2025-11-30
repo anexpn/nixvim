@@ -394,6 +394,15 @@
         desc = "Delete to Void Register";
       };
     }
+
+    {
+      mode = "n";
+      key = "<leader>z";
+      action = "<cmd>w<cr>";
+      options = {
+        desc = "Save File";
+      };
+    }
   ];
   extraConfigLua = ''
     function ToggleLineNumber()
