@@ -13,6 +13,14 @@
     }
     {
       mode = "n";
+      key = "<leader>'";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
+      options = {
+        desc = "Toggle Trouble (Alt)";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>xX";
       action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options = {

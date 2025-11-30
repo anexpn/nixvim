@@ -221,6 +221,14 @@
             color = "blue";
           };
         }
+        {
+          "__unkeyed-1" = "<leader>'";
+          desc = "Toggle Trouble";
+          icon = {
+            icon = "󰁨";
+            color = "red";
+          };
+        }
       ];
     };
   };
