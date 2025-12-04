@@ -281,5 +281,20 @@
     end, {
       desc = "Show recently added plugins and their usage"
     })
+
+    -- Load local experimental config overlay
+    -- This allows experimenting with plugins/config without rebuilding nixvim
+    local local_nvim = vim.fn.expand('~/.config/nvim-local')
+
+    if vim.fn.isdirectory(local_nvim) == 1 then
+      -- Add to runtimepath so plugins/lua modules are found
+      vim.opt.runtimepath:append(local_nvim)
+
+      -- Source init.lua if it exists
+      local init_file = local_nvim .. '/init.lua'
+      if vim.fn.filereadable(init_file) == 1 then
+        dofile(init_file)
+      end
+    end
   '';
 }
