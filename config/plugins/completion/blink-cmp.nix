@@ -23,15 +23,15 @@
             "path"
             "snippets"
             "buffer"
-            "copilot"
+            # "copilot"
           ];
           providers = {
-            copilot = {
-              async = true;
-              module = "blink-cmp-copilot";
-              name = "copilot";
-              score_offset = 100;
-            };
+            # copilot = {
+            #   async = true;
+            #   module = "blink-cmp-copilot";
+            #   name = "copilot";
+            #   score_offset = 100;
+            # };
             lazydev = {
               name = "lazydev";
               module = "lazydev.integrations.blink";
@@ -41,9 +41,9 @@
         };
       };
     };
-    blink-cmp-copilot = {
-      enable = true;
-    };
+    # blink-cmp-copilot = {
+    #   enable = true;
+    # };
     lazydev = {
       enable = true;
     };
