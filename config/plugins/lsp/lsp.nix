@@ -12,7 +12,10 @@
         nil_ls = {
           enable = true;
         };
-        pyright = {
+        pylsp = {
+          enable = true;
+        };
+        ruff = {
           enable = true;
         };
         gopls = {
@@ -32,6 +35,12 @@
           enable = true;
         };
         elixirls = {
+          enable = true;
+        };
+        rubocop = {
+          enable = true;
+        };
+        taplo = {
           enable = true;
         };
       };
