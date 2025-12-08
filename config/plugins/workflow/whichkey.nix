@@ -206,6 +206,30 @@
           };
         }
         {
+          "__unkeyed-1" = "<leader>uf";
+          desc = "Toggle Focus Auto-resize";
+          icon = {
+            icon = "󰖯";
+            color = "blue";
+          };
+        }
+        {
+          "__unkeyed-1" = "<leader>we";
+          desc = "Equalise Window Sizes";
+          icon = {
+            icon = "󰘑";
+            color = "cyan";
+          };
+        }
+        {
+          "__unkeyed-1" = "<leader>wm";
+          desc = "Maximise Current Window";
+          icon = {
+            icon = "󰊓";
+            color = "yellow";
+          };
+        }
+        {
           "__unkeyed-1" = "<leader>gn";
           desc = "Neogit";
           icon = {

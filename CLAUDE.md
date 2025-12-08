@@ -79,7 +79,7 @@ Plugins are organized by category in `config/plugins/`:
 2. Update `WISHLIST.md` to mark the plugin as completed
 3. **KEYMAP CONSISTENCY**: Always check `config/plugins/workflow/whichkey.nix` and follow existing keymap groups:
    - `<leader>f` = File operations
-   - `<leader>s` = Search operations  
+   - `<leader>s` = Search operations
    - `<leader>g` = Git operations
    - `<leader>c` = Code operations
    - `<leader>u` = UI operations
@@ -92,3 +92,5 @@ Plugins are organized by category in `config/plugins/`:
 - remember to add new nix file to default.nix
 - Always start new plugin config simple, add incrementally.
 - When adding plugins, start with default config with no settings.
+
+**For plugins not in NixVim's official set**: Use the `add-nixvim-plugin` skill for a guided workflow using `extraPlugins` and lazy loading.

@@ -41,6 +41,7 @@
     ./plugins/ui/ufo.nix
     ./plugins/ui/illuminate.nix
     ./plugins/ui/zen-mode.nix
+    ./plugins/ui/focus.nix
 
     ./plugins/navigation/flash.nix
     ./plugins/navigation/harpoon.nix

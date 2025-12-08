@@ -95,6 +95,17 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "focus.nvim",
+          date = "2025-12-09",
+          description = "Auto-resizing split window manager with golden ratio calculations",
+          keymaps = {
+            "<leader>uf = Toggle Focus Auto-resize",
+            "<leader>we = Equalise Window Sizes",
+            "<leader>wm = Maximise Current Window"
+          },
+          usage = "Automatically resizes splits using golden ratio. Toggle with <leader>uf. Features cursorline and signcolumn on focused window only"
+        },
+        {
           name = "jsonls (JSON LSP)",
           date = "2025-09-01",
           description = "JSON Language Server for syntax validation, formatting, and schema support",
