@@ -45,6 +45,7 @@
 
     ./plugins/navigation/flash.nix
     ./plugins/navigation/harpoon.nix
+    ./plugins/navigation/nvim-window.nix
     ./plugins/navigation/smart-splits.nix
 
     ./plugins/editing/comment.nix

@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Update dependencies**: `just update` (updates flake inputs)
 - **Clean**: `just clean` (garbage collect and clean build artifacts)
 
-**IMPORTANT**: Always run `git add .` before executing `nix flake check` or `nix build` commands. Nix flakes only see files that are tracked by git, so unstaged changes will cause build failures.
+**IMPORTANT**: This repository uses `jj` (Jujutsu) for version control. Files are automatically tracked, so no staging is required before running `nix build` or `nix flake check`. Nix flakes only see files tracked by version control, so ensure files exist before building.
 
 ## Architecture Overview
 

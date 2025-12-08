@@ -230,6 +230,14 @@
           };
         }
         {
+          "__unkeyed-1" = "<leader>wj";
+          desc = "Pick Window with Hints";
+          icon = {
+            icon = "󰖲";
+            color = "green";
+          };
+        }
+        {
           "__unkeyed-1" = "<leader>gn";
           desc = "Neogit";
           icon = {

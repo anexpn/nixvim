@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "nvim-window",
+          date = "2025-12-09",
+          description = "Quick window navigation using letter hints to jump between windows",
+          keymaps = {
+            "<leader>wj = Pick Window with Hints"
+          },
+          usage = "Press <leader>wj to show letter hints on all windows, then press the letter to jump to that window. Supports up to 52 windows per tab page"
+        },
+        {
           name = "focus.nvim",
           date = "2025-12-09",
           description = "Auto-resizing split window manager with golden ratio calculations",
