@@ -54,3 +54,25 @@
 ## Project Management
 - ~~**project.nvim**~~ - ✅ **COMPLETED** - Project management with automatic root detection, session management, and Telescope integration
 - **marks.nvim** - Enhanced mark management with visual indicators, bookmarks, and navigation improvements
+
+## Code Navigation & Symbols
+- **namu.nvim** - Jump to symbols with live preview, fuzzy finding, and hierarchy preservation supporting LSP, Treesitter, and ctags
+
+## Learning & Tips
+- **neovim-tips** - Interactive tips browser with hundreds of shortcuts and tricks, featuring search, bookmarks, and optional daily notifications
+- **nvim-training** - 67+ focused training tasks to practice vim keybindings through bite-sized exercises with automatic completion detection
+
+## Plugin Management
+- **store.nvim** - Browse and install 5,500+ Neovim plugins through intuitive UI with live README previews and universal package manager support
+
+## Buffer Management
+- **hbac.nvim** - Automatic buffer cleanup closing unedited buffers above threshold with pin/unpin support and Telescope integration
+
+## Completion Extensions
+- **blink-cmp-tmux** - Tmux completion source for blink.cmp suggesting words from tmux pane content
+
+## Color Tools
+- **minty** - Beautiful color manipulation tools with Shades and Huefy commands for working with colors in editor
+
+## Visual Effects
+- **tiny-glimmer.nvim** - Smooth customizable animations for yank, paste, search, undo/redo with multiple styles (fade, bounce, pulse, rainbow)

@@ -95,6 +95,15 @@
     vim.api.nvim_create_user_command('RecentPlugins', function()
       local recent_plugins = {
         {
+          name = "videre.nvim",
+          date = "2025-12-09",
+          description = "JSON/data explorer with terminal-based graph interface for visual navigation of structured data files",
+          keymaps = {
+            "<leader>uv = Open Videre Data Explorer"
+          },
+          usage = "Press <leader>uv to open Videre and explore JSON/YAML/TOML/XML files as an interactive graph. Use E to expand/collapse, L/H to navigate links, J/K to move, R to set root, q to close"
+        },
+        {
           name = "nvim-window",
           date = "2025-12-09",
           description = "Quick window navigation using letter hints to jump between windows",

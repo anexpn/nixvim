@@ -14,6 +14,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **IMPORTANT**: This repository uses `jj` (Jujutsu) for version control. Files are automatically tracked, so no staging is required before running `nix build` or `nix flake check`. Nix flakes only see files tracked by version control, so ensure files exist before building.
 
+### Jujutsu Workflow
+- Use `jj st` to check version control status (not `git status`)
+- Files are automatically tracked - no manual staging needed
+- Nix builds work directly with jj-tracked files without `git add` or similar commands
+- Changes appear in working copy immediately and are visible to Nix flakes
+
 ## Architecture Overview
 
 This is a NixVim configuration written in Nix that creates a complete Neovim setup. The configuration is structured as a Nix flake with modular organization:

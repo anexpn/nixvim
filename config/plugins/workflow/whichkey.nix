@@ -206,6 +206,14 @@
           };
         }
         {
+          "__unkeyed-1" = "<leader>uv";
+          desc = "Open Videre Data Explorer";
+          icon = {
+            icon = "󰘦";
+            color = "cyan";
+          };
+        }
+        {
           "__unkeyed-1" = "<leader>uf";
           desc = "Toggle Focus Auto-resize";
           icon = {
