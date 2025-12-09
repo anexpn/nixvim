@@ -194,6 +194,15 @@
         desc = "Quit All";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>qw";
+      action = "<cmd>wq<cr>";
+      options = {
+        silent = true;
+        desc = "Save & Quit";
+      };
+    }
     # Quit/Session ends
 
     # UI
