@@ -18,6 +18,9 @@
         ruff = {
           enable = true;
         };
+        pyright = {
+          enable = true;
+        };
         gopls = {
           enable = true;
         };
