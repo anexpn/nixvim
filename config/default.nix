@@ -41,7 +41,7 @@
     ./plugins/ui/ufo.nix
     ./plugins/ui/illuminate.nix
     ./plugins/ui/zen-mode.nix
-    ./plugins/ui/focus.nix
+    # ./plugins/ui/focus.nix
     ./plugins/ui/videre.nix
 
     ./plugins/navigation/flash.nix
